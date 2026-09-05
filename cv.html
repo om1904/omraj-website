@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Om Raj</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #1f2937;
+            background: #f8fafc;
+            padding: 2rem 1rem;
+            line-height: 1.55;
+        }
+        .cv-page {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 3rem;
+            box-shadow: 0 4px 25px rgba(0,0,0,0.06);
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+        }
+        .print-btn-bar {
+            max-width: 900px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .btn-print {
+            background: #059669;
+            color: white;
+            padding: 0.6rem 1.4rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+        .btn-print:hover { background: #047857; }
+
+        header.cv-header {
+            text-align: center;
+            border-bottom: 2px solid #059669;
+            padding-bottom: 1.25rem;
+            margin-bottom: 1.75rem;
+        }
+        h1.cv-name { font-size: 2.2rem; text-transform: uppercase; letter-spacing: 0.05em; color: #0f172a; margin-bottom: 0.5rem; }
+        .cv-contact { font-size: 0.9rem; color: #475569; display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; }
+        .cv-contact a { color: #059669; text-decoration: none; font-weight: 600; }
+
+        .cv-section { margin-bottom: 1.75rem; }
+        .cv-section-title {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #0f172a;
+            border-bottom: 1.5px solid #e2e8f0;
+            padding-bottom: 0.35rem;
+            margin-bottom: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .cv-section-title i { color: #059669; }
+
+        p.objective { font-size: 0.925rem; text-align: justify; color: #334155; }
+
+        table.cv-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.875rem;
+            margin-top: 0.5rem;
+        }
+        table.cv-table th, table.cv-table td {
+            border: 1px solid #cbd5e1;
+            padding: 0.6rem 0.75rem;
+            text-align: left;
+        }
+        table.cv-table th { background: #f1f5f9; font-weight: 700; color: #0f172a; }
+
+        .exp-item, .pub-item { margin-bottom: 1.25rem; }
+        .exp-title { font-size: 0.975rem; font-weight: 700; color: #0f172a; }
+        .exp-sub { font-size: 0.875rem; color: #64748b; font-style: italic; margin-bottom: 0.35rem; }
+        .exp-desc { font-size: 0.875rem; text-align: justify; color: #334155; }
+
+        ul.cv-list { list-style-type: disc; padding-left: 1.25rem; font-size: 0.875rem; color: #334155; }
+        ul.cv-list li { margin-bottom: 0.35rem; }
+
+        .ref-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; font-size: 0.875rem; }
+        .ref-box h4 { font-size: 0.95rem; color: #0f172a; }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .cv-page { box-shadow: none; padding: 0; border: none; }
+            .print-btn-bar { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="print-btn-bar">
+        <a href="index.html" class="btn-print" style="background: #475569;"><i class="fa-solid fa-arrow-left"></i> Back to Website</a>
+        <button onclick="window.print()" class="btn-print"><i class="fa-solid fa-print"></i> Print / Save as PDF</button>
+    </div>
+
+    <div class="cv-page">
+        <!-- Header -->
+        <header class="cv-header">
+            <h1 class="cv-name">OMRAJ</h1>
+            <div class="cv-contact">
+                <span><i class="fa-solid fa-phone"></i> +91 7979734220</span>
+                <span><i class="fa-solid fa-envelope"></i> omraj.student@gmail.com</span>
+                <span><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/om-raj-4355671aa/" target="_blank">LinkedIn Profile</a></span>
+                <span><i class="fa-brands fa-orcid"></i> <a href="https://orcid.org/0009-0002-7332-3962" target="_blank">ORCID: 0009-0002-7332-3962</a></span>
+            </div>
+        </header>
+
+        <!-- Career Objective -->
+        <div class="cv-section">
+            <h2 class="cv-section-title"><i class="fa-solid fa-compass"></i> Career Objective</h2>
+            <p class="objective">
+                Goal-oriented researcher with an M.Sc. in Botany and specialized research experience at IIT Ropar in aquatic pollutant dynamics, industrial wastewater treatment (CETP/STP/ETP), and biochar-induced plant biochemical responses. Combines rigorous analytical laboratory proficiencies (spectrophotometry, chromatography, molecular assays) with demonstrated capabilities in peer-reviewed authorship, scientific software engineering, and advanced literature gap synthesis. Aspiring to pursue cutting-edge doctoral/academic research in environmental biotechnology, sustainable remediation, and plant-environment interactions.
+            </p>
+        </div>
+
+        <!-- Educational Qualifications -->
+        <div class="cv-section">
+            <h2 class="cv-section-title"><i class="fa-solid fa-graduation-cap"></i> Educational Qualifications</h2>
+            <table class="cv-table">
+                <thead>
+                    <tr>
+                        <th>Course / Degree</th>
+                        <th>Institution</th>
+                        <th>University / Board</th>
+                        <th>Year</th>
+                        <th>Percentage / CGPA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>M.Sc. (Plant Pathology, Botany)</strong></td>
+                        <td>Department of Botany, Patna University</td>
+                        <td>Patna University</td>
+                        <td>2025</td>
+                        <td><strong>7.56 CGPA</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>B.Sc. (Botany)</strong></td>
+                        <td>Patna Science College, Patna</td>
+                        <td>Patna University</td>
+                        <td>2023</td>
+                        <td>63.50%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Diploma in Computer Applications</strong></td>
+                        <td>Vinita Computer Education</td>
+                        <td>Vinita Computer Education</td>
+                        <td>2022</td>
+                        <td>64.40%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Intermediate (Science)</strong></td>
+                        <td>Shanti Niketan Sr. Sec. School</td>
+                        <td>CBSE</td>
+                        <td>2019</td>
+                        <td>58.40%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Matriculation</strong></td>
+                        <td>Sunshine Prep./High School</td>
+                        <td>CBSE</td>
+                        <td>2017</td>
+                        <td>81.70%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Research Experience / Dissertation -->
+        <div class="cv-section">
+            <h2 class="cv-section-title"><i class="fa-solid fa-flask"></i> Research Experience & Dissertation</h2>
+            
+            <div class="exp-item">
+                <div class="exp-title">M.Sc. Dissertation: Water Quality Monitoring of the Ganga River at Patna Ghats Using Multi-Parameter Analysis</div>
+                <div class="exp-sub">Patna University | Supervisor: Prof. Dr. Meenakshi Singh, Head of Department, Dept. of Biotechnology</div>
+                <p class="exp-desc">Conducted field and laboratory investigations to assess water quality at major ghats of the Ganga River in Patna. Evaluated physicochemical parameters and the impact of sewage discharge with reference to CPCB, WHO, and BIS standards.</p>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-title">Researcher | Wastewater Management Project, IIT Ropar</div>
+                <div class="exp-sub">IIT Ropar | PPCB Project | Dept. of Civil Engineering | Supervisors: Prof. Indramani Dhada, Prof. Neelkanth Nirmalkar | PM: Dr. Harsh Sharma</div>
+                <p class="exp-desc">Hands-on exposure to sample collection and analysis from CETP, STP, ETP, and the Sutlej River; wastewater testing using multimeter, DO meter, pH meter; estimation of TSS, BOD, COD, DO, alkalinity, total coliform, sulfide, oil & grease, phenols, total chromium; trained in titration methods, reagent preparation, SOPs, protocols, and data management.</p>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-title">Researcher | Excise Department Audit Project, Punjab</div>
+                <div class="exp-sub">IIT Ropar | Dept. of Civil Engineering | Sponsor: Excise and Taxation Dept., Govt. of Punjab | PI: Dr. Indramani Dhada</div>
+                <p class="exp-desc">Conducted technical audits and environmental assessments of breweries, distilleries, and bottling plants across Punjab. Participated in industrial inspections, wastewater sampling, environmental compliance assessment, process evaluation, laboratory analysis, data interpretation, and technical report preparation.</p>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-title">Intern | Medical Writing Assistant</div>
+                <div class="exp-sub">YuvaIntern (in association with NSDC & Henry Harvin) | Issued: Nov 2025</div>
+                <p class="exp-desc">Conducted systematic literature searches and synthesized biomedical research across international databases to support scientific reviews and manuscripts. Managed bibliographic compilation and citation standardization (APA, IEEE, Vancouver).</p>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-title">Freelance Creative Professional & Graphic Designer</div>
+                <div class="exp-sub">Freelance & MARKAD LIMITED | 2021 – Present</div>
+                <p class="exp-desc">Designed and edited visual content for brands, student events, and academic promotions. Video editing using <strong>Adobe Premiere Pro, CapCut, and InShot</strong>. Graphic design using <strong>Adobe Photoshop and Canva Pro</strong>. Social media marketing, content strategy, and audience engagement on Instagram, Facebook, and YouTube via <strong>Meta Business Suite and Instagram Insights</strong>.</p>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-title">Graphic Designer – Patna University Student Union Election</div>
+                <div class="exp-sub">Patna University | 2022 & 2025</div>
+                <p class="exp-desc">Designed campaign materials including posters, banners, and digital creatives for candidates during student union elections. Worked under tight deadlines, maintained consistent visual branding across media, and collaborated with campaign strategy teams.</p>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-title">Event & Sports Coordinator</div>
+                <div class="exp-sub">Patna Science College | 2023, 2024, 2025</div>
+                <p class="exp-desc">Managed planning and execution of the Annual Sports Meet for three consecutive years. Oversaw logistics, student coordination, event scheduling, resource allocation, and on-ground management.</p>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-title">Volunteer – Patna University Alumni Meet</div>
+                <div class="exp-sub">Patna University | 2023 & 2025</div>
+                <p class="exp-desc">Organized alumni meets, handling guest coordination, dignitary hospitality, stage logistics, and event support.</p>
+            </div>
+        </div>
+
+        <!-- Publications -->
+        <div class="cv-section">
+            <h2 class="cv-section-title"><i class="fa-solid fa-book-bookmark"></i> Publications & Ongoing Manuscripts</h2>
+            <ul class="cv-list">
+                <li><strong>Raj, O.</strong>, & Ambreen, D. (2026). Assessment of Physicochemical Parameters of Water Samples from the Ganga River at Patna. <em>International Journal of Versatile Research and Analysis (IJVRA)</em>, 4(3), 784–810. ISSN: 2984-8903. Paper ID: IJVRA2603368.</li>
+                <li><strong>Ongoing Manuscript:</strong> Comparative Assessment of Pineapple Peel, Jackfruit Peel, and Drek Wood Biochar on Plant Growth, Soil Fertility, and Biochemical Responses. <em>Role: Researcher | IIT Ropar | Supervisor: Dr. Indramani Dhada</em>. Evaluating biochar feedstocks on plant growth, soil properties, and antioxidant enzymes (SOD, CAT, POD, proline, MDA).</li>
+                <li><strong>Preprint:</strong> <strong>OM RAJ</strong>, Indramani Dhada. Spatiotemporal Assessment Of Ambient Air Quality In Selected Urban, Tourist And Industrial Regions Of Himachal Pradesh, India: A Case Study. DOI: <a href="https://doi.org/10.21203/rs.3.rs-10492149/v1" target="_blank">10.21203/rs.3.rs-10492149/v1</a>.</li>
+            </ul>
+        </div>
+
+        <!-- Software Innovations -->
+        <div class="cv-section">
+            <h2 class="cv-section-title"><i class="fa-solid fa-laptop-code"></i> Published Software & Desktop Innovations</h2>
+            
+            <div class="exp-item">
+                <div class="exp-title">SNIFF DOI: Academic Literature Discovery & Research Gap Platform (2026)</div>
+                <div class="exp-sub">Developed by Om Raj (Civil Eng Dept, IIT Ropar) | Microsoft Store Desktop Application</div>
+                <ul class="cv-list">
+                    <li>Indexed 250M+ scientific publications for federated search and open-access discovery.</li>
+                    <li>Engineered 6-tier academic framework for theoretical deficits, experimental bottlenecks, and Q1 journal recommendations.</li>
+                    <li>CSL citation engine supporting APA 7th, IEEE, Harvard, Vancouver, BibTeX.</li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-title">Calculator Luxe: Scientific & High-Precision Calculator (2026)</div>
+                <div class="exp-sub">Developed by Om Raj | Microsoft Store Desktop Application</div>
+                <ul class="cv-list">
+                    <li>High-precision algebraic, trigonometric, logarithmic, and financial calculation engine.</li>
+                    <li>Integrated unit conversion and chemical constant matrix for environmental research.</li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-title">Watch Span: Multi-Timezone Productivity & Precision Timer Suite (2026)</div>
+                <div class="exp-sub">Developed by Om Raj | Microsoft Store Desktop Application</div>
+                <ul class="cv-list">
+                    <li>Millisecond-accurate spectrophotometry incubation countdowns and chemical reaction kinetics timers.</li>
+                    <li>World clock synchronization across international research labs and time zones.</li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-title">WASH (Water Analysis Suite Hub): Desktop Water Quality Executable (2026)</div>
+                <div class="exp-sub">Developed using HTML, CSS, JavaScript, Electron.js & Google AI Studio</div>
+                <ul class="cv-list">
+                    <li>Automated physicochemical calculations (pH, TDS, TSS, BOD, COD, alkalinity, heavy metals).</li>
+                    <li>Spectrophotometer calibration, linear regression curve generation, and PDF reports.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Research & Technical Skills -->
+        <div class="cv-section">
+            <h2 class="cv-section-title"><i class="fa-solid fa-microscope"></i> Research, Technical & Laboratory Skills</h2>
+            <ul class="cv-list">
+                <li><strong>Analytical Instruments:</strong> UV–Visible Spectrophotometer, Gas Chromatography (GC), Ion Chromatography, TVOC Analyzer, Carbon Analyzer, Aerosol Spectrophotometer, Formaldehyde Analyzer.</li>
+                <li><strong>Water Quality Instruments:</strong> pH, DO, TDS, EC, Turbidity Meters, COD Digester, BOD Incubator, Sensor-based Multiparameter.</li>
+                <li><strong>Molecular & Microbiology:</strong> PCR Thermal Cycler, Gel Electrophoresis Unit, Laminar Air Flow, Autoclave, Colony Counter, DNA Isolation.</li>
+                <li><strong>Video Editing & Media:</strong> Adobe Premiere Pro, CapCut, InShot (Academic, Promotional, Event & Reels Editing).</li>
+                <li><strong>Graphic & Packaging Design:</strong> Adobe Photoshop, Canva Pro, Brand Packaging, Campaign Posters, Journal Graphical Abstracts.</li>
+                <li><strong>Social Media Marketing & Strategy:</strong> Meta Business Suite, Instagram Insights, Content Planning & Audience Engagement (Instagram, Facebook, YouTube).</li>
+                <li><strong>Software & Tech Automation:</strong> MS Excel, Power BI, HTML5, CSS3, JavaScript, Electron.js, Visual Studio Code, Data Automation & Cost Optimization.</li>
+            </ul>
+        </div>
+
+        <!-- Workshops & Certifications -->
+        <div class="cv-section">
+            <h2 class="cv-section-title"><i class="fa-solid fa-certificate"></i> Workshops & Certifications</h2>
+            <ul class="cv-list">
+                <li><strong>Fundamentals of Remote Sensing | NASA:</strong> Core remote sensing concepts under "Train - Empower - Advance" initiative (Sept 2026).</li>
+                <li><strong>Advances in Genome Biology & Gene Regulation | JNU:</strong> School of Life Sciences, Jawaharlal Nehru University, New Delhi (June 2025).</li>
+                <li><strong>Marine Data 4 Asia 2025:</strong> Copernicus Marine Service & Mercator Ocean International EU Program (June 2025).</li>
+                <li><strong>Power BI & AI Interactive Dashboards:</strong> OfficeMaster (Sept 2025).</li>
+                <li><strong>Cancer Genomics, Clinical Research & AI:</strong> Biotecnika (Sept 2025).</li>
+            </ul>
+        </div>
+
+        <!-- Leadership & References -->
+        <div class="cv-section">
+            <h2 class="cv-section-title"><i class="fa-solid fa-user-tie"></i> References</h2>
+            <div class="ref-grid">
+                <div class="ref-box">
+                    <h4>1. Dr. Indramani Dhada</h4>
+                    <p>Assistant Professor, Dept. of Civil Engineering</p>
+                    <p>IIT Ropar, Rupnagar – 140001, Punjab, India</p>
+                    <p>Email: idhada@iitrpr.ac.in | Phone: +91 8005382785</p>
+                </div>
+                <div class="ref-box">
+                    <h4>2. Dr. Raj Laxmi Singh</h4>
+                    <p>Assistant Professor, Dept. of Botany</p>
+                    <p>Patna University, Patna – 800005, Bihar, India</p>
+                    <p>Email: rajlaxmi1982singh@gmail.com | Phone: +91 9102006684</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
