@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications & Manuscripts | Om Raj</title>
+    <meta name="description" content="Peer-reviewed publications, ongoing research manuscripts, and preprints by Om Raj in environmental water quality and air quality modeling.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.jpg" alt="mL Logo" class="logo-img">
+                <span class="logo-text">Om Raj<span class="dot">.</span></span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="about.html"><i class="fa-solid fa-user"></i> About</a>
+                <a href="research.html"><i class="fa-solid fa-flask"></i> Research</a>
+                <a href="publications.html" class="active"><i class="fa-solid fa-book-bookmark"></i> Publications</a>
+                <a href="software.html"><i class="fa-solid fa-laptop-code"></i> Software</a>
+                <a href="laboratory.html"><i class="fa-solid fa-microscope"></i> Lab & Skills</a>
+                <a href="education.html"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+                <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="cv.html" class="btn btn-outline btn-sm" target="_blank">
+                    <i class="fa-solid fa-file-pdf"></i> View CV
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Drawer -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About & Vision</a>
+        <a href="research.html">Research Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="software.html">Software & Live Demos</a>
+        <a href="laboratory.html">Laboratory Skills</a>
+        <a href="education.html">Education & Workshops</a>
+        <a href="contact.html">Contact & References</a>
+        <a href="cv.html" target="_blank">View / Print CV</a>
+    </div>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <span class="badge badge-primary"><i class="fa-solid fa-book-open"></i> Scholarly Record</span>
+            <h1>Publications & Ongoing Manuscripts</h1>
+            <p>Peer-reviewed journal articles, ongoing experimental studies, research square preprints, and citation metadata.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            
+            <div class="pub-grid">
+                
+                <!-- Published Paper 1 -->
+                <div class="card pub-card">
+                    <div class="pub-badge Published"><i class="fa-solid fa-circle-check"></i> Published Journal Article</div>
+                    <h2 class="pub-title">Assessment of Physicochemical Parameters of Water Samples from the Ganga River at Patna</h2>
+                    <p class="pub-authors"><strong>Raj, O.</strong>, & Ambreen, D. (2026)</p>
+                    <p class="pub-journal">
+                        <em>International Journal of Versatile Research and Analysis (IJVRA)</em>, Volume 4, Issue 3, Pages 784–810. ISSN: 2984-8903. Published Paper ID: <strong>IJVRA2603368</strong>
+                    </p>
+                    
+                    <div class="pub-abstract">
+                        <strong>Abstract:</strong> This research paper delivers a comprehensive multi-station spatial assessment of key physicochemical water parameters across urban ghats of the Ganga River in Patna. Water samples were analyzed for temperature, pH, electrical conductivity, dissolved oxygen (DO), biochemical oxygen demand ($\text{BOD}_5$), chemical oxygen demand (COD), total dissolved solids (TDS), total hardness, alkalinity, and microbiological contamination. Findings were evaluated against CPCB, WHO, and BIS 10500 standards to determine the impact of untreated municipal sewage discharge on riverine water safety and aquatic ecosystem sustainability.
+                    </div>
+
+                    <div class="pub-actions">
+                        <button class="btn btn-xs btn-outline" onclick="copyCitation('apa1')">
+                            <i class="fa-solid fa-copy"></i> Copy APA 7th Citation
+                        </button>
+                        <button class="btn btn-xs btn-outline" onclick="copyCitation('bib1')">
+                            <i class="fa-solid fa-code"></i> Copy BibTeX
+                        </button>
+                        <button class="btn btn-xs btn-outline" onclick="copyCitation('ieee1')">
+                            <i class="fa-solid fa-quote-right"></i> Copy IEEE Style
+                        </button>
+                    </div>
+
+                    <!-- Hidden citations for JS copying -->
+                    <div id="apa1" class="hidden-citation">Raj, O., & Ambreen, D. (2026). Assessment of Physicochemical Parameters of Water Samples from the Ganga River at Patna. International Journal of Versatile Research and Analysis (IJVRA), 4(3), 784–810.</div>
+                    <div id="bib1" class="hidden-citation">@article{raj2026ganga, author={Raj, Om and Ambreen, D.}, title={Assessment of Physicochemical Parameters of Water Samples from the Ganga River at Patna}, journal={International Journal of Versatile Research and Analysis}, volume={4}, number={3}, pages={784--810}, year={2026}, issn={2984-8903}}</div>
+                    <div id="ieee1" class="hidden-citation">[1] O. Raj and D. Ambreen, "Assessment of Physicochemical Parameters of Water Samples from the Ganga River at Patna," Int. J. Versatile Res. Anal. (IJVRA), vol. 4, no. 3, pp. 784-810, 2026.</div>
+                </div>
+
+                <!-- Ongoing Biochar Study -->
+                <div class="card pub-card">
+                    <div class="pub-badge Ongoing"><i class="fa-solid fa-clock-rotate-left"></i> Ongoing Manuscript | IIT Ropar</div>
+                    <h2 class="pub-title">Comparative Assessment of Pineapple Peel, Jackfruit Peel, and Drek Wood Biochar on Plant Growth, Soil Fertility, and Biochemical Responses</h2>
+                    <p class="pub-authors">
+                        <strong>Role: Researcher</strong> | Institution: Indian Institute of Technology Ropar (IIT Ropar) | Supervisor: Dr. Indramani Dhada | Collaborator: Mohammad Mustafa (International Research Student, IIT Ropar)
+                    </p>
+                    
+                    <div class="pub-abstract">
+                        <strong>Study Description:</strong> Conducting systematic research evaluating biochar produced from agricultural waste (pineapple peel, jackfruit peel) and forestry waste (Drek wood) feedstocks. Assessing seed germination rates, root/shoot length, biomass accumulation, soil pH, electrical conductivity, available nitrogen, phosphorus, potassium (NPK), and soil organic carbon. Analyzing plant biochemical stress responses including total protein, total soluble sugars, proline, malondialdehyde (MDA), and antioxidant enzymes (Superoxide Dismutase - SOD, Catalase - CAT, Peroxidase - POD, and total phenolics). Performing ANOVA and post-hoc Tukey tests across biochar application rates.
+                    </div>
+                </div>
+
+                <!-- Air Quality Preprint -->
+                <div class="card pub-card">
+                    <div class="pub-badge Preprint"><i class="fa-solid fa-file-pdf"></i> Research Square Preprint</div>
+                    <h2 class="pub-title">Spatiotemporal Assessment Of Ambient Air Quality In Selected Urban, Tourist And Industrial Regions Of Himachal Pradesh, India: A Case Study</h2>
+                    <p class="pub-authors"><strong>OM RAJ</strong>, Indramani Dhada</p>
+                    <p class="pub-journal">
+                        Preprint platform: <em>Research Square</em> | DOI: <a href="https://doi.org/10.21203/rs.3.rs-10492149/v1" target="_blank" class="doi-link">10.21203/rs.3.rs-10492149/v1 <i class="fa-solid fa-up-right-from-square"></i></a>
+                    </p>
+
+                    <div class="pub-abstract">
+                        <strong>Abstract Summary:</strong> Investigating ambient air quality fluctuations ($\text{PM}_{2.5}$, $\text{PM}_{10}$, $\text{SO}_2$, $\text{NO}_x$, $\text{CO}$) across tourist hubs, urban towns, and industrial clusters in Himachal Pradesh. Employs spatiotemporal modeling and Air Quality Index (AQI) calculations to assess industrial compliance and seasonal tourism impacts on ambient air toxicity.
+                    </div>
+
+                    <div class="pub-actions">
+                        <a href="https://doi.org/10.21203/rs.3.rs-10492149/v1" target="_blank" class="btn btn-xs btn-primary">
+                            <i class="fa-solid fa-external-link"></i> Access Full Preprint on Research Square
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h3>Om Raj</h3>
+                <p>Researcher | Environmental Biotechnology & Water Quality</p>
+                <p class="copyright">© 2026 Om Raj. Built with precision for global academic collaboration.</p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="mailto:omraj.student@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+                <a href="https://orcid.org/0009-0002-7332-3962" target="_blank"><i class="fa-brands fa-orcid"></i> ORCID</a>
+                <a href="https://www.linkedin.com/in/om-raj-4355671aa/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="cv.html" target="_blank"><i class="fa-solid fa-file-pdf"></i> Download Resume</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
