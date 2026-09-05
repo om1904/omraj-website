@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratory Instrumentation & Technical Skills | Om Raj</title>
+    <meta name="description" content="Comprehensive matrix of laboratory equipment, analytical instruments, and molecular techniques mastered by Om Raj.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.jpg" alt="mL Logo" class="logo-img">
+                <span class="logo-text">Om Raj<span class="dot">.</span></span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="about.html"><i class="fa-solid fa-user"></i> About</a>
+                <a href="research.html"><i class="fa-solid fa-flask"></i> Research</a>
+                <a href="publications.html"><i class="fa-solid fa-book-bookmark"></i> Publications</a>
+                <a href="software.html"><i class="fa-solid fa-laptop-code"></i> Software</a>
+                <a href="laboratory.html" class="active"><i class="fa-solid fa-microscope"></i> Lab & Skills</a>
+                <a href="education.html"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+                <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="cv.html" class="btn btn-outline btn-sm" target="_blank">
+                    <i class="fa-solid fa-file-pdf"></i> View CV
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Drawer -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About & Vision</a>
+        <a href="research.html">Research Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="software.html">Software & Live Demos</a>
+        <a href="laboratory.html">Laboratory Skills</a>
+        <a href="education.html">Education & Workshops</a>
+        <a href="contact.html">Contact & References</a>
+        <a href="cv.html" target="_blank">View / Print CV</a>
+    </div>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <span class="badge badge-primary"><i class="fa-solid fa-microscope"></i> Laboratory Proficiency</span>
+            <h1>Instrumentation & Technical Skills Suite</h1>
+            <p>Filterable catalog of analytical instrumentation, molecular biology apparatus, water testing sensors, sample preparation units, and computing tools.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- Search & Filter Controls -->
+            <div class="skills-filter-container">
+                <div class="search-box">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" id="skillSearch" placeholder="Type to search instruments (e.g. Spectrophotometer, PCR, GC, BOD, Centrifuge)..." onkeyup="filterSkills()">
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" onclick="filterCategory('all', this)">All Categories</button>
+                    <button class="filter-btn" onclick="filterCategory('analytical', this)">Analytical Monitoring</button>
+                    <button class="filter-btn" onclick="filterCategory('water', this)">Water & Wastewater</button>
+                    <button class="filter-btn" onclick="filterCategory('molecular', this)">Molecular & Microbiology</button>
+                    <button class="filter-btn" onclick="filterCategory('prep', this)">Sample Prep & Processing</button>
+                    <button class="filter-btn" onclick="filterCategory('software', this)">Software & Data Analysis</button>
+                    <button class="filter-btn" onclick="filterCategory('graphic', this)">Graphic Design & Visuals</button>
+                </div>
+            </div>
+
+            <!-- Skills Grid -->
+            <div class="grid grid-3" id="skillsGrid">
+                
+                <!-- Suite 1: Analytical Instruments -->
+                <div class="card skill-card" data-category="analytical">
+                    <div class="skill-cat-title"><i class="fa-solid fa-wave-square"></i> Analytical & Monitoring Instruments</div>
+                    <ul class="skill-list">
+                        <li><i class="fa-solid fa-microscope"></i> UV–Visible Spectrophotometer (Absorbance & Kinetics)</li>
+                        <li><i class="fa-solid fa-vial"></i> Gas Chromatography (GC)</li>
+                        <li><i class="fa-solid fa-filter-circle-dollar"></i> Ion Chromatography</li>
+                        <li><i class="fa-solid fa-wind"></i> Total Volatile Organic Compounds (TVOC) Analyzer</li>
+                        <li><i class="fa-solid fa-smog"></i> Carbon Analyzer & Aerosol Spectrophotometer</li>
+                        <li><i class="fa-solid fa-flask"></i> Formaldehyde Analyzer & Sound Level Meter</li>
+                    </ul>
+                </div>
+
+                <!-- Suite 2: Water & Wastewater Testing -->
+                <div class="card skill-card" data-category="water">
+                    <div class="skill-cat-title"><i class="fa-solid fa-droplet"></i> Water & Wastewater Analysis</div>
+                    <ul class="skill-list">
+                        <li><i class="fa-solid fa-gauge-high"></i> pH Meter, Dissolved Oxygen (DO) Meter</li>
+                        <li><i class="fa-solid fa-cube"></i> Total Dissolved Solids (TDS) & Electrical Conductivity (EC) Meters</li>
+                        <li><i class="fa-solid fa-eye-dropper"></i> Turbidity Meter & Sensor-based Multiparameter</li>
+                        <li><i class="fa-solid fa-fire-burner"></i> Chemical Oxygen Demand (COD) Digester</li>
+                        <li><i class="fa-solid fa-temperature-arrow-up"></i> Biochemical Oxygen Demand (BOD) Incubator</li>
+                        <li><i class="fa-solid fa-flask-vial"></i> Phenols, Sulfide, Total Chromium & Heavy Metal Protocols</li>
+                    </ul>
+                </div>
+
+                <!-- Suite 3: Molecular Biology & Microbiology -->
+                <div class="card skill-card" data-category="molecular">
+                    <div class="skill-cat-title"><i class="fa-solid fa-dna"></i> Molecular Biology & Microbiology</div>
+                    <ul class="skill-list">
+                        <li><i class="fa-solid fa-gear"></i> Polymerase Chain Reaction (PCR) Thermal Cycler</li>
+                        <li><i class="fa-solid fa-bars-staggered"></i> Gel Electrophoresis Unit (Agarose / Polyacrylamide)</li>
+                        <li><i class="fa-solid fa-box-archive"></i> Laminar Air Flow Cabinet & Autoclave</li>
+                        <li><i class="fa-solid fa-bacteria"></i> Microbial Incubator & Colony Counter</li>
+                        <li><i class="fa-solid fa-seedling"></i> Plant Enzyme Assays (SOD, CAT, POD, Proline, MDA)</li>
+                        <li><i class="fa-solid fa-vial-virus"></i> Plant DNA Isolation & Genomic Protocols</li>
+                    </ul>
+                </div>
+
+                <!-- Suite 4: Sample Prep & Processing -->
+                <div class="card skill-card" data-category="prep">
+                    <div class="skill-cat-title"><i class="fa-solid fa-arrows-spin"></i> Sample Processing & Distillation</div>
+                    <ul class="skill-list">
+                        <li><i class="fa-solid fa-snowflake"></i> Centrifuge & Refrigerated High-Speed Centrifuge</li>
+                        <li><i class="fa-solid fa-rotate"></i> Magnetic Stirrer, Hot Plate, Vortex Mixer</li>
+                        <li><i class="fa-solid fa-arrows-up-down-left-right"></i> Orbital Shaker & Incubator Shaker</li>
+                        <li><i class="fa-solid fa-spinner"></i> Rotary Evaporator</li>
+                        <li><i class="fa-solid fa-faucet-drip"></i> Distillation Unit & Double Distillation Unit</li>
+                        <li><i class="fa-solid fa-water"></i> Deionized Water & Reverse Osmosis (RO) Water Systems</li>
+                    </ul>
+                </div>
+
+                <!-- Suite 5: Heating, Drying & Storage -->
+                <div class="card skill-card" data-category="prep">
+                    <div class="skill-cat-title"><i class="fa-solid fa-temperature-high"></i> Heating, Drying & Storage</div>
+                    <ul class="skill-list">
+                        <li><i class="fa-solid fa-fire"></i> Hot Air Oven & Muffle Furnace</li>
+                        <li><i class="fa-solid fa-dumpster-fire"></i> Heating Mantle & Water Bath</li>
+                        <li><i class="fa-solid fa-ice-cream"></i> Laboratory Refrigerator & Ultra-Low Temp Freezer</li>
+                        <li><i class="fa-solid fa-boxes-packing"></i> Micropipettes, Vacuum Pump, Fume Hood, Desiccator</li>
+                        <li><i class="fa-solid fa-check"></i> pH Buffer Calibration Kits & SOP Protocols</li>
+                    </ul>
+                </div>
+
+                <!-- Suite 6: Data Analysis & Software -->
+                <div class="card skill-card" data-category="software">
+                    <div class="skill-cat-title"><i class="fa-solid fa-laptop-code"></i> Software, Data & Design</div>
+                    <ul class="skill-list">
+                        <li><i class="fa-solid fa-chart-pie"></i> MS Excel & Power BI Interactive Dashboards</li>
+                        <li><i class="fa-solid fa-chart-column"></i> ANOVA & Post-hoc Tukey Statistical Analysis</li>
+                        <li><i class="fa-solid fa-code"></i> HTML5, CSS3, JavaScript (ES6+), Electron.js</li>
+                        <li><i class="fa-solid fa-file-code"></i> Visual Studio Code, Git, CSL Citation Formatters</li>
+                        <li><i class="fa-solid fa-wand-magic-sparkles"></i> Adobe Photoshop, Illustrator, Canva, Premiere Pro</li>
+                    </ul>
+                </div>
+
+                <!-- Suite 7: Graphic Design, Video Editing & Digital Media -->
+                <div class="card skill-card" data-category="graphic">
+                    <div class="skill-cat-title"><i class="fa-solid fa-palette"></i> Creative Media, Video & Marketing</div>
+                    <ul class="skill-list">
+                        <li><i class="fa-solid fa-video"></i> Multi-Platform Video Editing (Adobe Premiere Pro, CapCut, InShot)</li>
+                        <li><i class="fa-solid fa-paintbrush"></i> Graphic Design & Visual Media (Adobe Photoshop, Canva Pro)</li>
+                        <li><i class="fa-solid fa-bullhorn"></i> Social Media Marketing & Analytics (Meta Business Suite, Instagram Insights)</li>
+                        <li><i class="fa-solid fa-check-to-slot"></i> Student Union Election Campaign Poster & Banner Design</li>
+                        <li><i class="fa-solid fa-bottle-water"></i> Product Packaging & Visual Identity (milliLitre Packaged Water)</li>
+                        <li><i class="fa-solid fa-diagram-project"></i> Publication-Grade Journal Graphical Abstracts & Infographics</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h3>Om Raj</h3>
+                <p>Researcher | Environmental Biotechnology & Water Quality</p>
+                <p class="copyright">© 2026 Om Raj. Built with precision for global academic collaboration.</p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="mailto:omraj.student@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+                <a href="https://orcid.org/0009-0002-7332-3962" target="_blank"><i class="fa-brands fa-orcid"></i> ORCID</a>
+                <a href="https://www.linkedin.com/in/om-raj-4355671aa/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="cv.html" target="_blank"><i class="fa-solid fa-file-pdf"></i> Download Resume</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
