@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Software & Live Demos | Om Raj</title>
+    <meta name="description" content="Scientific Software Innovations by Om Raj: SNIFF DOI, WASH Water Analysis Suite Hub, Calculator Luxe, and Watch Span (Available on Microsoft Store).">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.jpg" alt="mL Logo" class="logo-img">
+                <span class="logo-text">Om Raj<span class="dot">.</span></span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="about.html"><i class="fa-solid fa-user"></i> About</a>
+                <a href="research.html"><i class="fa-solid fa-flask"></i> Research</a>
+                <a href="publications.html"><i class="fa-solid fa-book-bookmark"></i> Publications</a>
+                <a href="software.html" class="active"><i class="fa-solid fa-laptop-code"></i> Software</a>
+                <a href="laboratory.html"><i class="fa-solid fa-microscope"></i> Lab & Skills</a>
+                <a href="education.html"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+                <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="cv.html" class="btn btn-outline btn-sm" target="_blank">
+                    <i class="fa-solid fa-file-pdf"></i> View CV
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Drawer -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About & Vision</a>
+        <a href="research.html">Research Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="software.html">Software & Live Demos</a>
+        <a href="laboratory.html">Laboratory Skills</a>
+        <a href="education.html">Education & Workshops</a>
+        <a href="contact.html">Contact & References</a>
+        <a href="cv.html" target="_blank">View / Print CV</a>
+    </div>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <span class="badge badge-primary"><i class="fa-solid fa-laptop-code"></i> Software Portfolio</span>
+            <h1>Software Innovations & Desktop Applications</h1>
+            <p>Published software applications available on the Microsoft Store & standalone desktop executables engineered for academic research, DOI intelligence, and environmental technology.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- Software Overview Cards (4 Apps Grid) -->
+            <div class="grid grid-2" style="margin-bottom: 4rem;">
+                
+                <!-- App 1: SNIFF DOI -->
+                <div class="card software-card highlight-card">
+                    <div class="software-header">
+                        <div class="software-icon"><i class="fa-solid fa-magnifying-glass-location"></i></div>
+                        <div>
+                            <h3>SNIFF DOI</h3>
+                            <span class="software-tag"><i class="fa-brands fa-microsoft"></i> Microsoft Store Desktop App (2026)</span>
+                        </div>
+                    </div>
+                    <p class="software-sub">All-in-One Academic Reference Manager, DOI Intelligence Scanner & Research Gap Workstation</p>
+                    <p class="software-dev">Developer: Om Raj (Researcher, Dept. of Civil Engineering, IIT Ropar)</p>
+                    
+                    <ul class="software-features">
+                        <li><i class="fa-solid fa-check-double"></i> <strong>250M+ Scientific Publications Indexed:</strong> Federated discovery engine enabling cross-disciplinary reference extraction and open-access full-text resolution.</li>
+                        <li><i class="fa-solid fa-check-double"></i> <strong>6-Tier Research Gap & Novelty Synthesis:</strong> Automates theoretical deficit analysis, experimental bottlenecks, connected paper citation graphs, and Q1 target journal recommendations.</li>
+                        <li><i class="fa-solid fa-check-double"></i> <strong>AI Integrity & Plagiarism Scanner:</strong> Advanced literature validation engine and automated CSL reference formatter (APA 7th, IEEE, Harvard, Vancouver, BibTeX).</li>
+                    </ul>
+
+                    <div class="software-actions">
+                        <a href="#simulator-section" class="btn btn-primary btn-sm">
+                            <i class="fa-solid fa-play"></i> Try Simulator Below
+                        </a>
+                        <span class="store-badge"><i class="fa-brands fa-microsoft"></i> Live on Microsoft Store</span>
+                    </div>
+                </div>
+
+                <!-- App 2: WASH (Water Analysis Suite Hub) -->
+                <div class="card software-card highlight-card">
+                    <div class="software-header">
+                        <div class="software-icon"><i class="fa-solid fa-flask-vial"></i></div>
+                        <div>
+                            <h3>WASH (Water Analysis Suite Hub)</h3>
+                            <span class="software-tag">Windows Environmental Tech Executable (2026)</span>
+                        </div>
+                    </div>
+                    <p class="software-sub">Independent Environmental Technology Platform for Water & Wastewater Quality</p>
+                    <p class="software-dev">Developer: Om Raj (Civil Engineering Dept., IIT Ropar)</p>
+                    
+                    <ul class="software-features">
+                        <li><i class="fa-solid fa-check-double"></i> <strong>Physicochemical Calculation Engine:</strong> Automated calculations for pH, TDS, TSS, BOD, COD, alkalinity, heavy metals, total coliform, and toxic phenols.</li>
+                        <li><i class="fa-solid fa-check-double"></i> <strong>Spectrophotometer Calibration:</strong> Linear regression standard curves, reagent absorbance calibration, and automated lab PDF reports.</li>
+                        <li><i class="fa-solid fa-check-double"></i> <strong>Wastewater Plant Compliance:</strong> Built for environmental testing labs, CETP/STP facility managers, and aquatic researchers.</li>
+                    </ul>
+
+                    <div class="software-actions">
+                        <a href="#calculator-section" class="btn btn-secondary btn-sm">
+                            <i class="fa-solid fa-calculator"></i> Test Live WQI Calculator
+                        </a>
+                        <span class="tech-stack">Electron.js | JS | CSS3</span>
+                    </div>
+                </div>
+
+                <!-- App 3: Calculator Luxe -->
+                <div class="card software-card highlight-card">
+                    <div class="software-header">
+                        <div class="software-icon" style="background: rgba(124, 58, 237, 0.15); color: var(--accent);"><i class="fa-solid fa-calculator"></i></div>
+                        <div>
+                            <h3>Calculator Luxe</h3>
+                            <span class="software-tag"><i class="fa-brands fa-microsoft"></i> Microsoft Store Desktop App (2026)</span>
+                        </div>
+                    </div>
+                    <p class="software-sub">High-Precision Scientific, Mathematical & Financial Calculator Suite</p>
+                    <p class="software-dev">Developer: Om Raj</p>
+                    
+                    <ul class="software-features">
+                        <li><i class="fa-solid fa-check-double"></i> <strong>High-Precision Mathematics Engine:</strong> Advanced scientific calculations, algebraic formulas, logarithmic and trigonometric computations.</li>
+                        <li><i class="fa-solid fa-check-double"></i> <strong>Unit Conversion & Constants Matrix:</strong> Built-in conversion library for environmental parameters, mass, volume, pressure, and chemical constants.</li>
+                        <li><i class="fa-solid fa-check-double"></i> <strong>Modern Responsive UI:</strong> Elegant glassmorphic UI, custom themes, calculation history memory, and instant precision rendering.</li>
+                    </ul>
+
+                    <div class="software-actions">
+                        <span class="btn btn-xs btn-outline"><i class="fa-solid fa-check"></i> Available Desktop App</span>
+                        <span class="store-badge"><i class="fa-brands fa-microsoft"></i> Live on Microsoft Store</span>
+                    </div>
+                </div>
+
+                <!-- App 4: Watch Span -->
+                <div class="card software-card highlight-card">
+                    <div class="software-header">
+                        <div class="software-icon" style="background: rgba(37, 99, 235, 0.15); color: var(--secondary);"><i class="fa-solid fa-stopwatch"></i></div>
+                        <div>
+                            <h3>Watch Span</h3>
+                            <span class="software-tag"><i class="fa-brands fa-microsoft"></i> Microsoft Store Desktop App (2026)</span>
+                        </div>
+                    </div>
+                    <p class="software-sub">Multi-Timezone Productivity, Precision Interval Timer & Time Suite</p>
+                    <p class="software-dev">Developer: Om Raj</p>
+                    
+                    <ul class="software-features">
+                        <li><i class="fa-solid fa-check-double"></i> <strong>Multi-Timezone & World Clock:</strong> Real-time synchronization across international research labs and time zones.</li>
+                        <li><i class="fa-solid fa-check-double"></i> <strong>Precision Lab Timer & Stopwatch:</strong> Millisecond-accurate countdowns designed for spectrophotometry incubation and chemical reaction kinetics.</li>
+                        <li><i class="fa-solid fa-check-double"></i> <strong>Focus & Productivity Intervals:</strong> Integrated Pomodoro and lab session time trackers with notification system.</li>
+                    </ul>
+
+                    <div class="software-actions">
+                        <span class="btn btn-xs btn-outline"><i class="fa-solid fa-check"></i> Available Desktop App</span>
+                        <span class="store-badge"><i class="fa-brands fa-microsoft"></i> Live on Microsoft Store</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Graphic Design & Creative Media Showcase -->
+            <div style="margin-bottom: 4rem;">
+                <div class="section-title text-center" style="margin-bottom: 2rem;">
+                    <span class="subtitle"><i class="fa-solid fa-palette"></i> Creative & Media Portfolio</span>
+                    <h2>Graphic Design, Video Editing & Social Media Marketing</h2>
+                    <p style="color: var(--text-muted); max-width: 800px; margin: 0.5rem auto 0 auto;">
+                        Combining 4+ years of creative experience as a <strong>Freelance Creative Professional (2022–Present)</strong>, Graphic Designer at <strong>MARKAD LIMITED (2021–Present)</strong>, and official designer for <strong>Patna University Elections</strong>.
+                    </p>
+                </div>
+
+                <div class="grid grid-3">
+                    <!-- Card 1: Freelance & MARKAD Design -->
+                    <div class="card">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <div style="width: 44px; height: 44px; border-radius: 12px; background: rgba(16, 185, 129, 0.15); color: var(--primary); display: flex; align-items: center; justify-content: center; font-size: 1.3rem;">
+                                <i class="fa-solid fa-pen-nib"></i>
+                            </div>
+                            <div>
+                                <h3 style="font-size: 1.15rem; margin: 0;">Freelance & MARKAD Design</h3>
+                                <span class="badge badge-primary" style="margin-top: 0.25rem;">2021 – Present</span>
+                            </div>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; text-align: justify; margin-bottom: 1rem;">
+                            Creating high-impact visual graphics, digital ads, corporate brand identity packages, and promotional materials using <strong>Adobe Photoshop & Canva Pro</strong>.
+                        </p>
+                        <ul style="list-style: none; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.35rem;">
+                            <li><i class="fa-solid fa-check text-primary"></i> Vector Logos & Corporate Brand Identity</li>
+                            <li><i class="fa-solid fa-check text-primary"></i> Digital Ads & Event Poster Design</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 2: Video Editing -->
+                    <div class="card">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <div style="width: 44px; height: 44px; border-radius: 12px; background: rgba(239, 68, 68, 0.15); color: #ef4444; display: flex; align-items: center; justify-content: center; font-size: 1.3rem;">
+                                <i class="fa-solid fa-video"></i>
+                            </div>
+                            <div>
+                                <h3 style="font-size: 1.15rem; margin: 0;">Multi-Platform Video Editing</h3>
+                                <span class="badge badge-subtle" style="margin-top: 0.25rem;">Premiere Pro, CapCut, InShot</span>
+                            </div>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; text-align: justify; margin-bottom: 1rem;">
+                            Editing academic tutorials, student event showcases, promotional reels, and social media video content under strict timelines.
+                        </p>
+                        <ul style="list-style: none; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.35rem;">
+                            <li><i class="fa-solid fa-check text-danger"></i> Academic & Event Video Editing</li>
+                            <li><i class="fa-solid fa-check text-danger"></i> Social Reels & Short-Form Video Content</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 3: Patna Univ Elections -->
+                    <div class="card">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <div style="width: 44px; height: 44px; border-radius: 12px; background: rgba(245, 158, 11, 0.15); color: var(--warning); display: flex; align-items: center; justify-content: center; font-size: 1.3rem;">
+                                <i class="fa-solid fa-check-to-slot"></i>
+                            </div>
+                            <div>
+                                <h3 style="font-size: 1.15rem; margin: 0;">Student Union Election Design</h3>
+                                <span class="badge badge-accent" style="margin-top: 0.25rem;">Patna University (2022 & 2025)</span>
+                            </div>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; text-align: justify; margin-bottom: 1rem;">
+                            Designed high-visibility campaign posters, election banners, and digital creatives for candidates during student union elections under tight deadlines.
+                        </p>
+                        <ul style="list-style: none; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.35rem;">
+                            <li><i class="fa-solid fa-check text-warning"></i> Campaign Banners & Voting Posters</li>
+                            <li><i class="fa-solid fa-check text-warning"></i> Candidate Visual Identity & Strategy</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 4: Social Media Marketing -->
+                    <div class="card">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <div style="width: 44px; height: 44px; border-radius: 12px; background: rgba(59, 130, 246, 0.15); color: var(--secondary); display: flex; align-items: center; justify-content: center; font-size: 1.3rem;">
+                                <i class="fa-solid fa-bullhorn"></i>
+                            </div>
+                            <div>
+                                <h3 style="font-size: 1.15rem; margin: 0;">Social Media Marketing</h3>
+                                <span class="badge badge-primary" style="margin-top: 0.25rem;">Meta Suite & Analytics</span>
+                            </div>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; text-align: justify; margin-bottom: 1rem;">
+                            Managing content strategy, visual branding, and audience growth across Instagram, Facebook, and YouTube using <strong>Meta Business Suite & Instagram Insights</strong>.
+                        </p>
+                        <ul style="list-style: none; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.35rem;">
+                            <li><i class="fa-solid fa-check text-secondary"></i> Content Planning & Engagement</li>
+                            <li><i class="fa-solid fa-check text-secondary"></i> Audience Analytics & Brand Promotion</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 5: milliLitre Packaging -->
+                    <div class="card">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <div style="width: 44px; height: 44px; border-radius: 12px; background: rgba(6, 182, 212, 0.15); color: #06b6d4; display: flex; align-items: center; justify-content: center; font-size: 1.3rem;">
+                                <i class="fa-solid fa-bottle-water"></i>
+                            </div>
+                            <div>
+                                <h3 style="font-size: 1.15rem; margin: 0;">milliLitre Brand & Packaging</h3>
+                                <span class="badge badge-accent" style="margin-top: 0.25rem;">Founder & Lead Designer</span>
+                            </div>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; text-align: justify; margin-bottom: 1rem;">
+                            Designed complete visual identity, custom logo art, bottle label packaging, and industrial marketing posters for the <strong>milliLitre</strong> water initiative.
+                        </p>
+                        <ul style="list-style: none; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.35rem;">
+                            <li><i class="fa-solid fa-check" style="color: #06b6d4;"></i> Packaged Bottle Label Typography</li>
+                            <li><i class="fa-solid fa-check" style="color: #06b6d4;"></i> Commercial Water Brand Identity</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 6: Scientific Abstracts & UI/UX -->
+                    <div class="card">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <div style="width: 44px; height: 44px; border-radius: 12px; background: rgba(124, 58, 237, 0.15); color: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 1.3rem;">
+                                <i class="fa-solid fa-diagram-project"></i>
+                            </div>
+                            <div>
+                                <h3 style="font-size: 1.15rem; margin: 0;">Scientific Figures & UI/UX</h3>
+                                <span class="badge badge-subtle" style="margin-top: 0.25rem;">Q1 Journals & MS Store Apps</span>
+                            </div>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; text-align: justify; margin-bottom: 1rem;">
+                            Illustrating journal graphical abstracts, biochar schematics, and desktop app UI assets for <strong>SNIFF DOI 2.0, WASH v2.0, Calculator Luxe, Watch Span</strong>.
+                        </p>
+                        <ul style="list-style: none; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.35rem;">
+                            <li><i class="fa-solid fa-check text-accent"></i> Journal Graphical Abstracts & Flowcharts</li>
+                            <li><i class="fa-solid fa-check text-accent"></i> Glassmorphic Software UI & Store Icons</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Divider -->
+            <div class="section-title text-center" id="live-demos">
+                <span class="subtitle">Embedded Demos</span>
+                <h2>Test Interactive Web Models</h2>
+            </div>
+
+            <!-- Live Demos Grid -->
+            <div class="grid grid-2">
+                
+                <!-- Tool 1: Water Quality Calculator -->
+                <div id="calculator-section" class="card calculator-card">
+                    <div class="tool-header">
+                        <i class="fa-solid fa-calculator text-primary"></i>
+                        <div>
+                            <h3>Water Quality & BOD/COD Calculator</h3>
+                            <p>Calculate BOD/COD biodegradability ratio & evaluate CPCB water compliance status</p>
+                        </div>
+                    </div>
+
+                    <div class="calc-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="pHVal"><i class="fa-solid fa-vial"></i> pH Level (6.5 - 8.5 target)</label>
+                                <input type="number" id="pHVal" step="0.1" value="7.4">
+                            </div>
+                            <div class="form-group">
+                                <label for="doVal"><i class="fa-solid fa-wind"></i> Dissolved Oxygen DO (mg/L)</label>
+                                <input type="number" id="doVal" step="0.1" value="6.5">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="bodVal"><i class="fa-solid fa-biohazard"></i> BOD5 (mg/L)</label>
+                                <input type="number" id="bodVal" step="1" value="12">
+                            </div>
+                            <div class="form-group">
+                                <label for="codVal"><i class="fa-solid fa-flask"></i> COD (mg/L)</label>
+                                <input type="number" id="codVal" step="1" value="45">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tdsVal"><i class="fa-solid fa-cube"></i> Total Dissolved Solids / TDS (mg/L)</label>
+                            <input type="number" id="tdsVal" step="10" value="320">
+                        </div>
+
+                        <button class="btn btn-primary btn-block" onclick="calculateWQI()">
+                            <i class="fa-solid fa-bolt"></i> Evaluate Water Quality Sample
+                        </button>
+                    </div>
+
+                    <div id="wqiResult" class="calc-result">
+                        <div class="result-box">
+                            <div class="result-item">
+                                <span class="res-label">BOD / COD Ratio</span>
+                                <span id="resRatio" class="res-value">0.27</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="res-label">Biodegradability</span>
+                                <span id="resBio" class="res-value text-accent">Moderately Biodegradable</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="res-label">CPCB Ganga Status</span>
+                                <span id="resStatus" class="res-value text-success">Class B/C Compliant</span>
+                            </div>
+                        </div>
+                        <p id="resDesc" class="result-desc">
+                            The sample parameters fall within acceptable bounds for treated municipal effluent / riverine bathing water.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tool 2: SNIFF DOI Research Gap Simulator -->
+                <div id="simulator-section" class="card simulator-card">
+                    <div class="tool-header">
+                        <i class="fa-solid fa-magnifying-glass-chart text-accent"></i>
+                        <div>
+                            <h3>SNIFF DOI Research Gap Simulator</h3>
+                            <p>Test federated literature gap analysis & automated CSL reference generation</p>
+                        </div>
+                    </div>
+
+                    <div class="calc-form">
+                        <div class="form-group">
+                            <label for="searchQuery"><i class="fa-solid fa-magnifying-glass"></i> Topic or DOI</label>
+                            <input type="text" id="searchQuery" value="Biochar heavy metal remediation Ganga river">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="cslFormat"><i class="fa-solid fa-quote-right"></i> CSL Citation Format</label>
+                                <select id="cslFormat">
+                                    <option value="APA 7th">APA 7th Edition</option>
+                                    <option value="IEEE">IEEE Reference Style</option>
+                                    <option value="Harvard">Harvard Reference Style</option>
+                                    <option value="BibTeX">BibTeX (.bib)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="journalTarget"><i class="fa-solid fa-book-open"></i> Journal Recommendation</label>
+                                <select id="journalTarget">
+                                    <option value="Q1">Q1 High Impact Factor</option>
+                                    <option value="OpenAccess">Open Access Focus</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-secondary btn-block" onclick="runSniffSim()">
+                            <i class="fa-solid fa-microchip"></i> Run Research Gap Synthesis
+                        </button>
+                    </div>
+
+                    <div id="sniffResult" class="calc-result">
+                        <div class="sniff-output">
+                            <div class="sniff-badge"><i class="fa-solid fa-robot"></i> SNIFF DOI Analysis Engine Output</div>
+                            <div class="sniff-gap-item">
+                                <strong>Theoretical Deficit:</strong> Empirical gap identified in multi-metal competitive biochar sorption kinetics.
+                            </div>
+                            <div class="sniff-gap-item">
+                                <strong>Experimental Bottleneck:</strong> Lack of standardized biochar leaching assays.
+                            </div>
+                            <div class="sniff-gap-item">
+                                <strong>Recommended Q1 Journal:</strong> <em>Journal of Hazardous Materials</em>
+                            </div>
+                            <div class="sniff-citation-box">
+                                <span class="cit-label">Formatted Citation:</span>
+                                <code id="formattedCit">Raj, O., Dhada, I., & Mustafa, M. (2026). Multi-parameter assessment of Biochar heavy metal remediation Ganga river. Environmental Science & Technology, 60(4), 1420-1435.</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h3>Om Raj</h3>
+                <p>Researcher | Environmental Biotechnology & Water Quality</p>
+                <p class="copyright">© 2026 Om Raj. Built with precision for global academic collaboration.</p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="mailto:omraj.student@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+                <a href="https://orcid.org/0009-0002-7332-3962" target="_blank"><i class="fa-brands fa-orcid"></i> ORCID</a>
+                <a href="https://www.linkedin.com/in/om-raj-4355671aa/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="cv.html" target="_blank"><i class="fa-solid fa-file-pdf"></i> Download Resume</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
