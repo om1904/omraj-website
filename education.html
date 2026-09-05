@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education & Workshops | Om Raj</title>
+    <meta name="description" content="Academic qualifications, degrees, and international workshops completed by Om Raj (NASA, JNU, EU Copernicus Marine Service).">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.jpg" alt="mL Logo" class="logo-img">
+                <span class="logo-text">Om Raj<span class="dot">.</span></span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="about.html"><i class="fa-solid fa-user"></i> About</a>
+                <a href="research.html"><i class="fa-solid fa-flask"></i> Research</a>
+                <a href="publications.html"><i class="fa-solid fa-book-bookmark"></i> Publications</a>
+                <a href="software.html"><i class="fa-solid fa-laptop-code"></i> Software</a>
+                <a href="laboratory.html"><i class="fa-solid fa-microscope"></i> Lab & Skills</a>
+                <a href="education.html" class="active"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+                <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="cv.html" class="btn btn-outline btn-sm" target="_blank">
+                    <i class="fa-solid fa-file-pdf"></i> View CV
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Drawer -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About & Vision</a>
+        <a href="research.html">Research Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="software.html">Software & Live Demos</a>
+        <a href="laboratory.html">Laboratory Skills</a>
+        <a href="education.html">Education & Workshops</a>
+        <a href="contact.html">Contact & References</a>
+        <a href="cv.html" target="_blank">View / Print CV</a>
+    </div>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <span class="badge badge-primary"><i class="fa-solid fa-graduation-cap"></i> Academic Credentials</span>
+            <h1>Education, Workshops & Certifications</h1>
+            <p>Formal academic degrees alongside technical workshops delivered by NASA, JNU New Delhi, EU Copernicus Marine Service, and Biotecnika.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            
+            <div class="grid grid-2">
+                
+                <!-- Card 1: Educational Timeline -->
+                <div class="card edu-card">
+                    <h2 style="font-size: 1.4rem; margin-bottom: 1.5rem;"><i class="fa-solid fa-graduation-cap text-primary"></i> Academic Degrees</h2>
+                    
+                    <div class="edu-timeline">
+                        <div class="edu-item">
+                            <div class="edu-year">2023 - 2025</div>
+                            <div class="edu-details">
+                                <h4>M.Sc. in Plant Pathology (Botany)</h4>
+                                <p class="edu-inst">Department of Botany, Patna University, Patna</p>
+                                <span class="score-pill">CGPA: 7.56</span>
+                                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.4rem;">Dissertation on Ganga river water quality monitoring across Patna ghats. Advanced courses in plant disease diagnostics, molecular plant pathology, and analytical instrumentation.</p>
+                            </div>
+                        </div>
+
+                        <div class="edu-item">
+                            <div class="edu-year">2020 - 2023</div>
+                            <div class="edu-details">
+                                <h4>B.Sc. in Botany</h4>
+                                <p class="edu-inst">Patna Science College, Patna University</p>
+                                <span class="score-pill">Marks: 63.50%</span>
+                                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.4rem;">Core training in plant anatomy, physiology, taxonomy, ecology, biochemistry, and microbiology.</p>
+                            </div>
+                        </div>
+
+                        <div class="edu-item">
+                            <div class="edu-year">2022</div>
+                            <div class="edu-details">
+                                <h4>Diploma in Computer Applications (DCA)</h4>
+                                <p class="edu-inst">Vinita Computer Education</p>
+                                <span class="score-pill">Marks: 64.40%</span>
+                                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.4rem;">Foundational training in computer operations, software logic, and data management.</p>
+                            </div>
+                        </div>
+
+                        <div class="edu-item">
+                            <div class="edu-year">2017 - 2019</div>
+                            <div class="edu-details">
+                                <h4>Intermediate (Science)</h4>
+                                <p class="edu-inst">Shanti Niketan Sr. Sec. School (CBSE Board)</p>
+                                <span class="score-pill">Marks: 58.40%</span>
+                            </div>
+                        </div>
+
+                        <div class="edu-item">
+                            <div class="edu-year">2017</div>
+                            <div class="edu-details">
+                                <h4>Matriculation (10th Standard)</h4>
+                                <p class="edu-inst">Sunshine Prep. / High School (CBSE Board)</p>
+                                <span class="score-pill">Marks: 81.70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Workshops & Certifications -->
+                <div class="card cert-card">
+                    <h2 style="font-size: 1.4rem; margin-bottom: 1.5rem;"><i class="fa-solid fa-certificate text-accent"></i> Specialized Workshops</h2>
+                    
+                    <ul class="cert-list">
+                        <li>
+                            <div class="cert-badge">NASA</div>
+                            <div>
+                                <strong>Fundamentals of Remote Sensing | NASA</strong>
+                                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">
+                                    Core remote sensing principles, satellite sensor imagery interpretation, and environmental monitoring applications under the "Train - Empower - Advance" initiative (September 2026).
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="cert-badge">JNU</div>
+                            <div>
+                                <strong>Advances in Genome Biology & Gene Regulation | JNU</strong>
+                                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">
+                                    School of Life Sciences, Jawaharlal Nehru University (JNU), New Delhi. Hands-on exposure to genome regulation, molecular genetics, and plant molecular techniques (June 2025).
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="cert-badge">EU Program</div>
+                            <div>
+                                <strong>Marine Data 4 Asia 2025 | Copernicus Marine</strong>
+                                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">
+                                    Copernicus Marine Service & Mercator Ocean International EU Program. International training on ocean observation tools, marine data products, and sustainable management (June 2025).
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="cert-badge">Power BI</div>
+                            <div>
+                                <strong>Power BI & AI Interactive Dashboards | OfficeMaster</strong>
+                                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">
+                                    Practical certification in building AI-powered data visualization dashboards, data transformation, and environmental metric modeling (September 2025).
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="cert-badge">Biotecnika</div>
+                            <div>
+                                <strong>Cancer Genomics, Clinical Research & AI Pathways</strong>
+                                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">
+                                    National-level workshop covering clinical research, oncology genomics, and machine learning applications in molecular biology (September 2025).
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h3>Om Raj</h3>
+                <p>Researcher | Environmental Biotechnology & Water Quality</p>
+                <p class="copyright">© 2026 Om Raj. Built with precision for global academic collaboration.</p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="mailto:omraj.student@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+                <a href="https://orcid.org/0009-0002-7332-3962" target="_blank"><i class="fa-brands fa-orcid"></i> ORCID</a>
+                <a href="https://www.linkedin.com/in/om-raj-4355671aa/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="cv.html" target="_blank"><i class="fa-solid fa-file-pdf"></i> Download Resume</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
