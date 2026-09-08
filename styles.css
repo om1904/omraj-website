@@ -926,12 +926,10 @@ a:hover {
 .photo-card img {
     width: 100%;
     height: auto;
-    max-height: 480px;
-    object-fit: contain;
     display: block;
     background: var(--bg-secondary);
     cursor: pointer;
-    transition: filter 0.2s ease;
+    transition: filter 0.2s ease, transform 0.2s ease;
 }
 .photo-card img:hover {
     filter: brightness(1.03);
