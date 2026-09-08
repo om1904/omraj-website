@@ -166,31 +166,23 @@
                     </div>
                 </div>
 
-                <!-- Contact Interactive Form -->
-                <div class="card">
-                    <h2 style="font-size: 1.5rem; margin-bottom: 1.25rem; color: var(--text-main);"><i class="fa-solid fa-paper-plane text-primary"></i> Send Inquiry Message</h2>
+                <!-- Google Form & Contact Interactive Card -->
+                <div class="card highlight-card" style="padding: 1.5rem; background: var(--bg-card);">
+                    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+                        <h2 style="font-size: 1.35rem; margin: 0; color: var(--primary);"><i class="fa-solid fa-clipboard-list"></i> Academic & Collaboration Inquiry Form</h2>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSddjvyRRVe7cwAiJJIcA0CfVxv2lr2mmlPvZSEPyE0y_x2BkQ/viewform" target="_blank" class="btn btn-xs btn-primary">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Form in New Tab
+                        </a>
+                    </div>
                     
-                    <form onsubmit="handleContactSubmit(event)" class="calc-form">
-                        <div class="form-group">
-                            <label for="senderName"><i class="fa-solid fa-user"></i> Full Name</label>
-                            <input type="text" id="senderName" required placeholder="Dr. Jane Doe / Prof. Smith">
-                        </div>
-                        <div class="form-group">
-                            <label for="senderEmail"><i class="fa-solid fa-envelope"></i> Email Address</label>
-                            <input type="email" id="senderEmail" required placeholder="jane.doe@university.edu">
-                        </div>
-                        <div class="form-group">
-                            <label for="msgSubject"><i class="fa-solid fa-heading"></i> Subject</label>
-                            <input type="text" id="msgSubject" required placeholder="Ph.D. Position / Research Collaboration">
-                        </div>
-                        <div class="form-group">
-                            <label for="msgContent"><i class="fa-solid fa-comment-dots"></i> Message Content</label>
-                            <textarea id="msgContent" rows="4" required placeholder="Briefly state your academic inquiry or research proposal..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">
-                            <i class="fa-solid fa-paper-plane"></i> Send Direct Message
-                        </button>
-                    </form>
+                    <!-- Embedded Google Form Frame -->
+                    <div style="border-radius: 12px; overflow: hidden; border: 1px solid var(--border-color); background: #ffffff;">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSddjvyRRVe7cwAiJJIcA0CfVxv2lr2mmlPvZSEPyE0y_x2BkQ/viewform?embedded=true" width="100%" height="680" frameborder="0" marginheight="0" marginwidth="0">Loading Official Google Form...</iframe>
+                    </div>
+
+                    <div style="margin-top: 1rem; font-size: 0.85rem; color: var(--text-muted); text-align: center;">
+                        Prefer direct email? Send message directly to <a href="mailto:omraj.student@gmail.com" style="color: var(--primary); font-weight: 600;">omraj.student@gmail.com</a>
+                    </div>
                 </div>
 
             </div>
