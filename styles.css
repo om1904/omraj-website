@@ -1159,3 +1159,68 @@ a:hover {
     vertical-align: middle;
 }
 
+/* Authentic Platform & Software Brand Badges */
+.brand-badge-orcid {
+    background: linear-gradient(135deg, #a6ce39 0%, #7da620 100%);
+    color: #ffffff !important;
+    border: 1px solid rgba(166, 206, 57, 0.6);
+    box-shadow: 0 3px 10px rgba(166, 206, 57, 0.3);
+}
+
+.brand-badge-linkedin {
+    background: linear-gradient(135deg, #0a66c2 0%, #004182 100%);
+    color: #ffffff !important;
+    border: 1px solid rgba(10, 102, 194, 0.6);
+    box-shadow: 0 3px 10px rgba(10, 102, 194, 0.3);
+}
+
+.brand-badge-gdrive {
+    background: linear-gradient(135deg, #0f9d58 0%, #15803d 100%);
+    color: #ffffff !important;
+    border: 1px solid rgba(34, 197, 94, 0.5);
+    box-shadow: 0 3px 10px rgba(15, 157, 88, 0.3);
+}
+
+.brand-badge-email {
+    background: linear-gradient(135deg, #ea4335 0%, #b91c1c 100%);
+    color: #ffffff !important;
+    border: 1px solid rgba(239, 68, 68, 0.5);
+    box-shadow: 0 3px 10px rgba(234, 67, 53, 0.3);
+}
+
+.brand-badge-sniff {
+    background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+    color: #ffffff !important;
+    border: 1px solid rgba(59, 130, 246, 0.6);
+    box-shadow: 0 3px 10px rgba(29, 78, 216, 0.3);
+}
+
+.brand-badge-wash {
+    background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+    color: #ffffff !important;
+    border: 1px solid rgba(56, 189, 248, 0.6);
+    box-shadow: 0 3px 10px rgba(2, 132, 199, 0.3);
+}
+
+.brand-badge-luxe {
+    background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+    color: #ffffff !important;
+    border: 1px solid rgba(168, 85, 247, 0.6);
+    box-shadow: 0 3px 10px rgba(124, 58, 237, 0.3);
+}
+
+.brand-badge-clock {
+    background: linear-gradient(135deg, #d97706 0%, #92400e 100%);
+    color: #ffffff !important;
+    border: 1px solid rgba(245, 158, 11, 0.6);
+    box-shadow: 0 3px 10px rgba(217, 119, 6, 0.3);
+}
+
+.brand-badge-ml {
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    color: #ffffff !important;
+    border: 1px solid rgba(14, 165, 233, 0.6);
+    box-shadow: 0 3px 10px rgba(14, 165, 233, 0.3);
+}
+
+
