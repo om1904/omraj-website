@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Raj - Software & Web Development Presentation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #0f172a;
+            background: #e2e8f0;
+            padding: 2rem;
+            line-height: 1.5;
+        }
+        .presentation-container {
+            max-width: 960px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .slide {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid #cbd5e1;
+            position: relative;
+            overflow: hidden;
+        }
+        .slide-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 0.75rem;
+        }
+        .slide-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #2563eb;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .slide-badge {
+            background: #f1f5f9;
+            color: #475569;
+            padding: 0.3rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.78rem;
+            font-weight: 700;
+        }
+        .slide-content {
+            flex: 1;
+            padding: 1.25rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .slide-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 0.65rem;
+            font-size: 0.78rem;
+            color: #64748b;
+        }
+        .slide-footer a { color: #2563eb; font-weight: 700; text-decoration: none; }
+
+        /* Slide 1 Specific */
+        .title-slide {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            color: #ffffff;
+        }
+        .title-slide .slide-title { color: #93c5fd; font-size: 1.8rem; }
+        .title-slide p { color: #e0e7ff; font-size: 1.05rem; }
+        .title-slide .slide-footer { border-color: rgba(255,255,255,0.2); color: #cbd5e1; }
+        .title-slide .slide-footer a { color: #93c5fd; }
+
+        .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+
+        .feature-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        .feature-card h4 { font-size: 0.95rem; color: #0f172a; margin-bottom: 0.35rem; font-weight: 800; }
+        .feature-card p { font-size: 0.82rem; color: #475569; }
+
+        .btn-print-bar {
+            max-width: 960px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .btn-action {
+            background: #2563eb;
+            color: white;
+            padding: 0.6rem 1.4rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .btn-print-bar { display: none; }
+            .slide {
+                page-break-after: always;
+                border: none;
+                box-shadow: none;
+                width: 100%;
+                height: 100vh;
+                aspect-ratio: auto;
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="btn-print-bar">
+        <a href="index.html" class="btn-action" style="background: #475569;"><i class="fa-solid fa-arrow-left"></i> Back to Website</a>
+        <button onclick="window.print()" class="btn-action"><i class="fa-solid fa-print"></i> Export Software Presentation to PDF</button>
+    </div>
+
+    <div class="presentation-container">
+        
+        <!-- SLIDE 1: Title -->
+        <div class="slide title-slide">
+            <div style="margin-bottom: 0.5rem;">
+                <span style="background: rgba(255,255,255,0.15); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">
+                    IIT Ropar TIF – AWaDH Application Presentation
+                </span>
+            </div>
+            <div class="slide-content">
+                <h1 style="font-size: 2.2rem; font-weight: 800; color: #ffffff; margin-bottom: 0.5rem;">
+                    Software, Web & Application Development Portfolio
+                </h1>
+                <p style="margin-bottom: 1.5rem;">
+                    Applicant: <strong>OM RAJ</strong> | Category: <strong>Software / Application Development / Website</strong>
+                </p>
+                <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); font-size: 0.88rem;">
+                    <strong>Live Application & Store Links:</strong><br>
+                    • SNIFF DOI 2.0 Live on Microsoft Store: <a href="https://apps.microsoft.com/detail/9NNM780C19JC" target="_blank">View Microsoft Store App Page <i class="fa-solid fa-up-right-from-square" style="font-size: 0.75rem;"></i></a><br>
+                    • IIT Ropar AWE LAB Official Portal: <a href="https://sites.google.com/iitrpr.ac.in/indramanidhada/awe-lab-iit-ropar?authuser=0" target="_blank">View Live Portal <i class="fa-solid fa-up-right-from-square" style="font-size: 0.75rem;"></i></a><br>
+                    • Personal Website: <a href="https://om1904.github.io/omraj-website/" target="_blank">https://om1904.github.io/omraj-website/ <i class="fa-solid fa-up-right-from-square" style="font-size: 0.75rem;"></i></a>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span>IIT Ropar Technology & Innovation Foundation (TIF)</span>
+                <span>Advt No.: PM/September 2026/02</span>
+            </div>
+        </div>
+
+        <!-- SLIDE 2: SNIFF DOI 2.0 -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-title"><i class="fa-solid fa-magnifying-glass-location"></i> 1. SNIFF DOI 2.0 — Academic Literature Discovery Engine</div>
+                <span class="slide-badge">Live on Microsoft Store</span>
+            </div>
+            <div class="slide-content">
+                <div class="grid-2">
+                    <div class="feature-card">
+                        <h4>250M+ Federated Article Index</h4>
+                        <p>Built a high-throughput search engine enabling cross-disciplinary reference retrieval, open-access resolution, and citation extraction.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>6-Tier Research Gap Engine</h4>
+                        <p>Automates theoretical deficit analysis, experimental bottlenecks, connected paper citation graphs, and Q1 target journal recommendations.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>CSL Citation Engine</h4>
+                        <p>Implemented automated citation formatting engine supporting APA 7th, IEEE, Harvard, Vancouver, and BibTeX export formats.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Microsoft Store Distribution</h4>
+                        <p>Packaged and published as a native Windows desktop workstation app. <a href="https://apps.microsoft.com/detail/9NNM780C19JC" target="_blank">[View MS Store Page <i class="fa-solid fa-up-right-from-square"></i>]</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span>Om Raj — Software Development Presentation</span>
+                <span>Slide 2 of 5</span>
+            </div>
+        </div>
+
+        <!-- SLIDE 3: WASH Suite v2.0 -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-title"><i class="fa-solid fa-droplet"></i> 2. WASH Suite v2.0 — Environmental Chemistry Solvers</div>
+                <span class="slide-badge">Live on Microsoft Store</span>
+            </div>
+            <div class="slide-content">
+                <div class="grid-2">
+                    <div class="feature-card">
+                        <h4>APHA & BIS Calculation Solvers</h4>
+                        <p>Programmed physicochemical calculation algorithms for pH, TDS, TSS, BOD5, COD, alkalinity, and heavy metal concentrations based on APHA 24th Ed & BIS 10500.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Linear Regression Calibration</h4>
+                        <p>Built spectrophotometer multi-point linear calibration module with standard curve fitting and absorbance validation.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>NABL ISO-17025 PDF Exporter</h4>
+                        <p>Automated generation of official laboratory PDF compliance certificates for STP/ETP facility managers.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Live Store Distribution</h4>
+                        <p>Live on Microsoft Store for environmental engineers and water quality laboratories. <a href="https://apps.microsoft.com/detail/9PG0T3ZWFH6J" target="_blank">[View MS Store Page <i class="fa-solid fa-up-right-from-square"></i>]</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span>Om Raj — Software Development Presentation</span>
+                <span>Slide 3 of 5</span>
+            </div>
+        </div>
+
+        <!-- SLIDE 4: Web Portals & Web UI -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-title"><i class="fa-solid fa-globe"></i> 3. Institutional Web Portals & Web Development</div>
+                <span class="slide-badge">IIT Ropar & Web Apps</span>
+            </div>
+            <div class="slide-content">
+                <div class="grid-2">
+                    <div class="feature-card">
+                        <h4>AWE LAB Official IIT Ropar Portal</h4>
+                        <p>Designed, authored, and launched the official academic research laboratory web portal for Dr. Indramani Dhada's group at IIT Ropar. <a href="https://sites.google.com/iitrpr.ac.in/indramanidhada/awe-lab-iit-ropar?authuser=0" target="_blank">[View Live Portal <i class="fa-solid fa-up-right-from-square"></i>]</a></p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Multi-Page Portfolio Web App</h4>
+                        <p>Built responsive, light-theme academic website equipped with interactive lightboxes, live WQI calculator, search filters, and embedded Google Forms. <a href="https://om1904.github.io/omraj-website/" target="_blank">[View Website <i class="fa-solid fa-up-right-from-square"></i>]</a></p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Frontend UI/UX Architecture</h4>
+                        <p>Clean HTML5, CSS3, JavaScript (ES6+), custom theme variables, dynamic layout math, and mobile responsiveness.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Automated Node.js Tooling</h4>
+                        <p>Experienced in writing Node.js build scripts, REST API integrations, and automated headless PDF rendering workflows.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span>Om Raj — Software Development Presentation</span>
+                <span>Slide 4 of 5</span>
+            </div>
+        </div>
+
+        <!-- SLIDE 5: Alignment with AWaDH -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-title"><i class="fa-solid fa-rocket"></i> 4. Value Proposition & Alignment with AWaDH TIF</div>
+                <span class="slide-badge">IIT Ropar iHub - AWaDH</span>
+            </div>
+            <div class="slide-content">
+                <div class="grid-2">
+                    <div class="feature-card">
+                        <h4>Full-Stack Software Capability</h4>
+                        <p>Ready to design and maintain AWaDH web portals, dashboard tools, MIS systems, and startup repository portals.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Proven Store & Web Track Record</h4>
+                        <p>4 published Microsoft Store applications and live academic web portals demonstrate end-to-end execution capabilities.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>ICPS & DeepTech Familiarity</h4>
+                        <p>Background at IIT Ropar combines technical software engineering with environmental technology, Cyber-Physical Systems, and data modeling.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Immediate On-Site Availability</h4>
+                        <p>Already associated with IIT Ropar, ready to contribute to AWaDH software, web, and technology projects immediately.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span>Om Raj — Software Development Presentation</span>
+                <span>Slide 5 of 5</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

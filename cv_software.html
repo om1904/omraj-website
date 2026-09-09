@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Raj - Software & Web Application Developer Resume (2-Page)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #1e293b;
+            background: #f1f5f9;
+            padding: 1.5rem;
+            line-height: 1.45;
+            font-size: 0.88rem;
+        }
+        .cv-page {
+            max-width: 820px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 2.2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border-radius: 8px;
+            border: 1px solid #cbd5e1;
+        }
+        .print-btn-bar {
+            max-width: 820px;
+            margin: 0 auto 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .btn-print {
+            background: #2563eb;
+            color: white;
+            padding: 0.5rem 1.2rem;
+            border: none;
+            border-radius: 6px;
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+        .btn-print:hover { background: #1d4ed8; }
+
+        header.cv-header {
+            text-align: center;
+            border-bottom: 2.5px solid #2563eb;
+            padding-bottom: 0.85rem;
+            margin-bottom: 1.2rem;
+        }
+        h1.cv-name { font-size: 2rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; color: #0f172a; margin-bottom: 0.25rem; }
+        .cv-subtitle { font-size: 0.95rem; font-weight: 700; color: #2563eb; margin-bottom: 0.5rem; }
+        .cv-contact { font-size: 0.83rem; color: #475569; display: flex; justify-content: center; flex-wrap: wrap; gap: 0.85rem; }
+        .cv-contact a { color: #2563eb; text-decoration: none; font-weight: 700; }
+
+        .cv-section { margin-bottom: 1.15rem; }
+        .cv-section-title {
+            font-size: 1rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: #0f172a;
+            border-bottom: 1.5px solid #cbd5e1;
+            padding-bottom: 0.25rem;
+            margin-bottom: 0.65rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .cv-section-title i { color: #2563eb; }
+
+        p.summary { font-size: 0.86rem; text-align: justify; color: #334155; line-height: 1.5; }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem 1rem;
+            font-size: 0.84rem;
+        }
+        .skills-item { display: flex; gap: 0.4rem; }
+        .skills-item strong { color: #0f172a; min-width: 140px; }
+
+        .exp-item { margin-bottom: 0.85rem; }
+        .exp-header { display: flex; justify-content: space-between; align-items: baseline; }
+        .exp-title { font-size: 0.92rem; font-weight: 800; color: #0f172a; }
+        .exp-date { font-size: 0.8rem; font-weight: 700; color: #2563eb; }
+        .exp-sub { font-size: 0.83rem; color: #64748b; font-weight: 600; margin-bottom: 0.25rem; }
+        ul.cv-list { list-style-type: disc; padding-left: 1.15rem; font-size: 0.84rem; color: #334155; }
+        ul.cv-list li { margin-bottom: 0.2rem; }
+
+        table.cv-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.83rem;
+            margin-top: 0.35rem;
+        }
+        table.cv-table th, table.cv-table td {
+            border: 1px solid #cbd5e1;
+            padding: 0.4rem 0.6rem;
+            text-align: left;
+        }
+        table.cv-table th { background: #f8fafc; font-weight: 700; color: #0f172a; }
+
+        .ref-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; font-size: 0.82rem; }
+        .ref-box h4 { font-size: 0.88rem; color: #0f172a; font-weight: 700; }
+
+        .badge-pill {
+            display: inline-block;
+            padding: 0.15rem 0.45rem;
+            background: rgba(37, 99, 235, 0.1);
+            color: #2563eb;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        @media print {
+            body { background: white; padding: 0; font-size: 11pt; }
+            .cv-page { box-shadow: none; padding: 0; border: none; max-width: 100%; }
+            .print-btn-bar { display: none; }
+            .page-break { page-break-before: always; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="print-btn-bar">
+        <a href="index.html" class="btn-print" style="background: #475569;"><i class="fa-solid fa-arrow-left"></i> Back to Website</a>
+        <button onclick="window.print()" class="btn-print"><i class="fa-solid fa-print"></i> Print / Save as PDF (Strict 2-Page)</button>
+    </div>
+
+    <div class="cv-page">
+        <!-- Header -->
+        <header class="cv-header">
+            <h1 class="cv-name">OM RAJ</h1>
+            <div class="cv-subtitle">Software Engineer & Web / Desktop Application Developer</div>
+            <div class="cv-contact">
+                <span><i class="fa-solid fa-phone"></i> +91 7979734220</span>
+                <span><i class="fa-solid fa-envelope"></i> omraj.student@gmail.com</span>
+                <span><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/om-raj-4355671aa/" target="_blank">LinkedIn Profile</a></span>
+                <span><i class="fa-brands fa-microsoft"></i> <a href="https://apps.microsoft.com/detail/9NNM780C19JC" target="_blank">Microsoft Store Apps</a></span>
+                <span><i class="fa-solid fa-globe"></i> <a href="https://om1904.github.io/omraj-website/" target="_blank">omraj-website</a></span>
+            </div>
+        </header>
+
+        <!-- Executive Summary -->
+        <div class="cv-section">
+            <h2 class="cv-section-title"><i class="fa-solid fa-user-code"></i> Professional Summary</h2>
+            <p class="summary">
+                Accomplished <strong>Software Engineer, Web Developer & Desktop Application Creator</strong> with proven expertise in building full-stack research portals, cross-platform desktop applications published on the <strong>Microsoft Store</strong> (<em>SNIFF DOI 2.0</em>, <em>WASH Suite v2.0</em>, <em>Calculator Luxe</em>, <em>Clock Span</em>), and responsive Web UI/UX platforms. Currently associated with <strong>IIT Ropar (Civil Engineering Dept.)</strong> as Junior Researcher and Lead Developer for the official <strong>AWE LAB Portal</strong>. Specialized in JavaScript, Electron.js, Node.js, HTML5/CSS3, automated calculation engines, and federated academic data indexing engines.
+            </p>
+        </div>
+
+        <!-- Technical & Software Competencies -->
+        <div class="cv-section">
+            <h2 class="cv-section-title"><i class="fa-solid fa-code"></i> Core Tech Stack & Software Skills</h2>
+            <div class="skills-grid">
+                <div class="skills-item"><strong>Languages & Scripts:</strong> <span>JavaScript (ES6+), HTML5, CSS3, JSON, Markdown, Node.js scripts.</span></div>
+                <div class="skills-item"><strong>Desktop Development:</strong> <span>Electron.js, Microsoft Store Packaging (MSIX/Appx), Win32 API integration.</span></div>
+                <div class="skills-item"><strong>Web & UI/UX Design:</strong> <span>Responsive layout math, Flexbox/Grid, Figma, GitHub Pages deployment, Google Sites.</span></div>
+                <div class="skills-item"><strong>Domain Solvers & Engines:</strong> <span>APHA 24th Ed & BIS 10500 calculation algorithms, CSL Citation Formatter (APA/IEEE).</span></div>
+                <div class="skills-item"><strong>Data Indexing & APIs:</strong> <span>Federated literature search engines (250M+ DOI index), REST API automation.</span></div>
+                <div class="skills-item"><strong>Version Control & Tools:</strong> <span>Git, GitHub CLI (gh.exe), VS Code, PowerShell automation, NABL PDF Generators.</span></div>
+            </div>
+        </div>
+
+        <!-- Published Software & Major Projects -->
+        <div class="cv-section">
+            <h2 class="cv-section-title"><i class="fa-solid fa-laptop-code"></i> Published Desktop Applications & Web Portals</h2>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <span class="exp-title">SNIFF DOI 2.0 — Academic Literature Discovery & Research Gap Platform</span>
+                    <span class="exp-date">Microsoft Store Live</span>
+                </div>
+                <div class="exp-sub">Developer: Om Raj | <a href="https://apps.microsoft.com/detail/9NNM780C19JC" target="_blank">Store Link</a></div>
+                <ul class="cv-list">
+                    <li>Engineered federated search engine indexing 250M+ scientific publications for open-access resolution.</li>
+                    <li>Developed 6-tier research gap synthesis engine and CSL reference formatter supporting APA 7th, IEEE, Harvard, BibTeX.</li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <span class="exp-title">WASH Suite v2.0 — Environmental Chemistry Engine & Regulatory Platform</span>
+                    <span class="exp-date">Microsoft Store Live</span>
+                </div>
+                <div class="exp-sub">Developer: Om Raj (Civil Eng Dept, IIT Ropar) | <a href="https://apps.microsoft.com/detail/9PG0T3ZWFH6J" target="_blank">Store Link</a></div>
+                <ul class="cv-list">
+                    <li>Built Physicochemical calculation engine for APHA 24th Ed & BIS 10500 standards (pH, TDS, TSS, BOD5, COD, heavy metals).</li>
+                    <li>Implemented spectrophotometer linear regression calibration module and automated NABL ISO-17025 PDF certificate exporter.</li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <span class="exp-title">AWE LAB Official Web Portal — IIT Ropar</span>
+                    <span class="exp-date">IIT Ropar Live Portal</span>
+                </div>
+                <div class="exp-sub">Lead Designer & Developer | <a href="https://sites.google.com/iitrpr.ac.in/indramanidhada/awe-lab-iit-ropar?authuser=0" target="_blank">Portal Link</a></div>
+                <ul class="cv-list">
+                    <li>Designed and deployed official research laboratory portal for Dr. Indramani Dhada's team at IIT Ropar.</li>
+                    <li>Integrated laboratory member profiles, publication repositories, instrumentation showcases, and academic updates.</li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <span class="exp-title">Calculator Luxe & Clock Span — Scientific & Chrono Desktop Tools</span>
+                    <span class="exp-date">Microsoft Store Live</span>
+                </div>
+                <div class="exp-sub">Developer: Om Raj | <a href="https://apps.microsoft.com/detail/9PF90LS2NF8B" target="_blank">Calculator Luxe</a> | <a href="https://apps.microsoft.com/detail/9P69V080BK6G" target="_blank">Clock Span</a></div>
+                <ul class="cv-list">
+                    <li>Created high-precision algebraic & trigonometric calculator engine with unit conversion matrix.</li>
+                    <li>Developed millisecond-accurate lab incubation timer and world clock synchronized across 400+ IANA timezones.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+
+        <!-- Professional Experience -->
+        <div class="cv-section" style="margin-top: 1.5rem;">
+            <h2 class="cv-section-title"><i class="fa-solid fa-briefcase"></i> Professional Development & Research Experience</h2>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <span class="exp-title">Junior Researcher & Lead Developer</span>
+                    <span class="exp-date">Nov 2025 – Present</span>
+                </div>
+                <div class="exp-sub">Department of Civil Engineering, Indian Institute of Technology Ropar (IIT Ropar)</div>
+                <ul class="cv-list">
+                    <li>Leads web portal development, research database management, and software UI/UX engineering for AWE LAB at IIT Ropar.</li>
+                    <li>Executes environmental data synthesis, wastewater compliance modeling, and spatiotemporal air quality dataset processing.</li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <span class="exp-title">Founder & Lead Tech Creator — milliLitre</span>
+                    <span class="exp-date">2023 – Present</span>
+                </div>
+                <div class="exp-sub">milliLitre (SAH Group Packaged Water Initiative)</div>
+                <ul class="cv-list">
+                    <li>Developed digital brand identity, product packaging artwork, interactive customer web tools, and marketing systems.</li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <span class="exp-title">Freelance Web & UI/UX Developer — MARKAD LIMITED</span>
+                    <span class="exp-date">2021 – Present</span>
+                </div>
+                <div class="exp-sub">MARKAD LIMITED & Freelance Tech Professional</div>
+                <ul class="cv-list">
+                    <li>Created responsive web graphics, UI components, vector branding assets, and digital communication tools.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="cv-section">
+            <h2 class="cv-section-title"><i class="fa-solid fa-graduation-cap"></i> Academic Qualifications</h2>
+            <table class="cv-table">
+                <thead>
+                    <tr>
+                        <th>Degree / Certificate</th>
+                        <th>Institution</th>
+                        <th>Board / University</th>
+                        <th>Year</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>M.Sc. (Plant Pathology, Botany)</strong></td>
+                        <td>Department of Botany, Patna University</td>
+                        <td>Patna University</td>
+                        <td>2023 – 2025</td>
+                        <td><span class="badge-pill">CGPA: 7.56</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>B.Sc. (Botany Honours)</strong></td>
+                        <td>Patna Science College, Patna</td>
+                        <td>Patna University</td>
+                        <td>2020 – 2023</td>
+                        <td>63.50%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Diploma in Computer Applications (DCA)</strong></td>
+                        <td>Vinita Computer Education</td>
+                        <td>Vinita Computer Education</td>
+                        <td>2022</td>
+                        <td>64.40%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Intermediate (Science)</strong></td>
+                        <td>Shanti Niketan Sr. Sec. School</td>
+                        <td>CBSE Board</td>
+                        <td>2019</td>
+                        <td>58.40%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Direct Open-Access Portfolio Links -->
+        <div class="cv-section">
+            <h2 class="cv-section-title"><i class="fa-solid fa-folder-open"></i> Open-Access Portfolio & Software Links</h2>
+            <ul class="cv-list">
+                <li><strong>Microsoft Store Application Profile:</strong> <a href="https://apps.microsoft.com/detail/9NNM780C19JC" target="_blank">SNIFF DOI 2.0 on Microsoft Store</a></li>
+                <li><strong>IIT Ropar AWE LAB Official Portal:</strong> <a href="https://sites.google.com/iitrpr.ac.in/indramanidhada/awe-lab-iit-ropar?authuser=0" target="_blank">https://sites.google.com/iitrpr.ac.in/indramanidhada/awe-lab-iit-ropar</a></li>
+                <li><strong>Personal Academic & Software Website:</strong> <a href="https://om1904.github.io/omraj-website/" target="_blank">https://om1904.github.io/omraj-website/</a></li>
+                <li><strong>Google Drive Design & Software Media Repository:</strong> <a href="https://drive.google.com/drive/folders/1rTMfDjT8qNjjpwqAgdjfr3m0oZJaOJH6?usp=sharing" target="_blank">Google Drive Folder</a></li>
+            </ul>
+        </div>
+
+        <!-- Academic References -->
+        <div class="cv-section">
+            <h2 class="cv-section-title"><i class="fa-solid fa-user-tie"></i> References</h2>
+            <div class="ref-grid">
+                <div class="ref-box">
+                    <h4>1. Dr. Indramani Dhada</h4>
+                    <p>Assistant Professor, Dept. of Civil Engineering</p>
+                    <p>IIT Ropar, Rupnagar – 140001, Punjab, India</p>
+                    <p>Email: idhada@iitrpr.ac.in | Phone: +91 8005382785</p>
+                </div>
+                <div class="ref-box">
+                    <h4>2. Dr. Raj Laxmi Singh</h4>
+                    <p>Assistant Professor, Dept. of Botany</p>
+                    <p>Patna University, Patna – 800005, Bihar, India</p>
+                    <p>Email: rajlaxmi1982singh@gmail.com | Phone: +91 9102006684</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
