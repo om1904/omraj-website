@@ -1147,6 +1147,98 @@ a:hover {
     font-size: 0.82rem;
 }
 
+/* NATS & Industry Partner Badges */
+.inst-badge-nats {
+    background: linear-gradient(135deg, #0d3b66 0%, #001e3d 100%);
+    color: #ffffff !important;
+    font-weight: 700;
+    border: 1px solid rgba(244, 211, 94, 0.6);
+    box-shadow: 0 4px 12px rgba(13, 59, 102, 0.25);
+    padding: 0.5rem 0.85rem;
+    min-width: 100px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.82rem;
+}
+
+.inst-badge-tata {
+    background: linear-gradient(135deg, #004b87 0%, #002b54 100%);
+    color: #ffffff !important;
+    font-weight: 700;
+    border: 1px solid rgba(0, 150, 255, 0.5);
+    box-shadow: 0 4px 12px rgba(0, 75, 135, 0.25);
+    padding: 0.5rem 0.85rem;
+    min-width: 100px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.82rem;
+}
+
+.inst-badge-siemens {
+    background: linear-gradient(135deg, #00646e 0%, #003a40 100%);
+    color: #ffffff !important;
+    font-weight: 700;
+    border: 1px solid rgba(0, 235, 199, 0.5);
+    box-shadow: 0 4px 12px rgba(0, 100, 110, 0.25);
+    padding: 0.5rem 0.85rem;
+    min-width: 100px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.82rem;
+}
+
+.inst-badge-lifearc {
+    background: linear-gradient(135deg, #381559 0%, #1d0733 100%);
+    color: #ffffff !important;
+    font-weight: 700;
+    border: 1px solid rgba(168, 85, 247, 0.5);
+    box-shadow: 0 4px 12px rgba(56, 21, 89, 0.25);
+    padding: 0.5rem 0.85rem;
+    min-width: 100px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.82rem;
+}
+
+.inst-badge-mastercard {
+    background: linear-gradient(135deg, #c2410c 0%, #7c2d12 100%);
+    color: #ffffff !important;
+    font-weight: 700;
+    border: 1px solid rgba(249, 115, 22, 0.5);
+    box-shadow: 0 4px 12px rgba(194, 65, 12, 0.25);
+    padding: 0.5rem 0.85rem;
+    min-width: 100px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.82rem;
+}
+
+.inst-badge-goodwin {
+    background: linear-gradient(135deg, #ea580c 0%, #9a3412 100%);
+    color: #ffffff !important;
+    font-weight: 700;
+    border: 1px solid rgba(251, 146, 60, 0.5);
+    box-shadow: 0 4px 12px rgba(234, 88, 12, 0.25);
+    padding: 0.5rem 0.85rem;
+    min-width: 100px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.82rem;
+}
+
+.inst-badge-forage {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: #ffffff !important;
+    font-weight: 700;
+    border: 1px solid rgba(148, 163, 184, 0.5);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.25);
+    padding: 0.5rem 0.85rem;
+    min-width: 100px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.82rem;
+}
+
 .inst-pill-tag {
     display: inline-flex;
     align-items: center;
