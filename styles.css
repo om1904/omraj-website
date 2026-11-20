@@ -357,7 +357,7 @@ a:hover {
     background: var(--bg-glass);
     backdrop-filter: blur(16px);
     border-bottom: var(--glass-border);
-    height: 75px;
+    height: 80px;
     display: flex;
     align-items: center;
     width: 100%;
@@ -387,14 +387,16 @@ a:hover {
 
 /* LOGO IMAGE WITHOUT BORDER / BOUNDARY */
 .logo-img {
-    height: 42px;
+    height: 58px;
+    max-height: 58px;
     width: auto;
     object-fit: contain;
-    border: none;
-    outline: none;
-    box-shadow: none;
-    background: transparent;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
     padding: 0;
+    transition: transform 0.25s ease;
 }
 
 .logo-text {
@@ -628,7 +630,7 @@ a:hover {
 
 .avatar-box {
     width: 75px;
-    height: 75px;
+    height: 80px;
     border-radius: 20px;
     background: linear-gradient(135deg, #059669 0%, #2563eb 100%);
     display: flex;
@@ -1609,4 +1611,19 @@ a:hover {
 .affiliation-logo-sub {
     font-size: 0.7rem;
     color: var(--text-muted);
+}
+
+
+.inst-badge-iitropar img,
+.inst-badge-patna img,
+.inst-badge-nats img,
+.inst-badge-forage img,
+.inst-pill-tag img {
+    height: 26px !important;
+    max-height: 26px !important;
+    width: auto !important;
+    object-fit: contain !important;
+    vertical-align: middle !important;
+    border: none !important;
+    background: transparent !important;
 }
