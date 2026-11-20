@@ -114,13 +114,22 @@ body {
 }
 
 /* Typography & Headings */
+h1 {
+    font-size: clamp(3.4rem, 6vw, 4.8rem);
+    line-height: 1.05;
+}
+
+h2 {
+    font-size: clamp(2.6rem, 4.6vw, 3.8rem);
+    line-height: 1.1;
+}
+
 h1, h2 {
     color: var(--header-color, #0B2545);
     font-family: var(--font-display);
     font-weight: 700;
-    line-height: 1.15;
     letter-spacing: 0.05em;
-    word-spacing: 0.22em;
+    word-spacing: 0.28em;
     text-transform: uppercase;
 }
 
@@ -129,7 +138,7 @@ h3, h4 {
     font-family: var(--font-primary);
     font-weight: 700;
     line-height: 1.25;
-    word-spacing: 0.08em;
+    word-spacing: 0.12em;
 }
 
 .serif-greeting, .editorial-serif, .serif-quote {
@@ -513,10 +522,11 @@ a:hover {
 }
 
 .page-banner h1 {
-    font-size: 2.85rem;
+    font-size: clamp(3.2rem, 5.5vw, 4.4rem);
+    line-height: 1.06;
     color: var(--header-color, #0B2545);
     letter-spacing: 0.05em;
-    word-spacing: 0.22em;
+    word-spacing: 0.28em;
     margin-bottom: 0.5rem;
 }
 
@@ -553,10 +563,10 @@ a:hover {
 .hero-title {
     color: var(--header-color, #0B2545);
     font-family: var(--font-display);
-    font-size: clamp(2.8rem, 5.5vw, 4.4rem);
+    font-size: clamp(3.4rem, 6.2vw, 5.0rem);
     line-height: 1.05;
-    letter-spacing: 0.04em;
-    word-spacing: 0.2em;
+    letter-spacing: 0.05em;
+    word-spacing: 0.28em;
     text-transform: uppercase;
     margin: 1rem 0;
 }
@@ -702,9 +712,9 @@ a:hover {
 .section-title h2 {
     color: var(--header-color, #0B2545);
     font-family: var(--font-display);
-    font-size: clamp(2.2rem, 4vw, 3.2rem);
-    letter-spacing: 0.045em;
-    word-spacing: 0.2em;
+    font-size: clamp(2.6rem, 4.6vw, 3.8rem);
+    letter-spacing: 0.05em;
+    word-spacing: 0.28em;
     text-transform: uppercase;
     line-height: 1.05;
 }
@@ -989,19 +999,80 @@ a:hover {
 
 /* Footer - Full Width */
 .footer {
-    background: #141414;
+    background: linear-gradient(180deg, #134429 0%, #0c2b19 100%);
     color: #FFFFFF;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 2px solid rgba(217, 249, 157, 0.25);
+    box-shadow: 0 -10px 30px rgba(12, 43, 25, 0.35);
     padding: 3.5rem 0;
     width: 100%;
 }
-.footer .logo-text { color: #FFFFFF; }
+.footer .logo-text {
+    background: linear-gradient(135deg, #FFFFFF 0%, #E2F9B8 45%, #A3E635 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--font-display);
+    letter-spacing: 0.04em;
+    word-spacing: 0.18em;
+}
+.footer-info h3 {
+    background: linear-gradient(135deg, #FFFFFF 0%, #E2F9B8 45%, #A3E635 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--font-display);
+    font-size: 1.85rem;
+    letter-spacing: 0.04em;
+    word-spacing: 0.2em;
+    margin-bottom: 0.35rem;
+}
+.footer-info p {
+    color: #F1F5F9;
+    font-size: 0.95rem;
+}
 .footer-container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; padding: 0 4rem; width: 100%; max-width: 100%; }
 @media (max-width: 1200px) { .footer-container { padding: 0 2rem; } }
-.copyright { font-size: 0.85rem; color: #A3A3A3; margin-top: 0.4rem; }
-.footer-links { display: flex; gap: 1.5rem; flex-wrap: wrap; }
-.footer-links a { color: #D4D4D4; font-size: 0.95rem; font-weight: 500; }
-.footer-links a:hover { color: #6EE7B7; }
+.copyright {
+    font-size: 0.88rem;
+    color: #D9F99D;
+    opacity: 0.92;
+    margin-top: 0.45rem;
+}
+.footer-links { display: flex; gap: 1rem; flex-wrap: wrap; }
+.footer-links a {
+    color: #FFFFFF;
+    font-size: 0.92rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.45rem 0.9rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: var(--transition);
+}
+.footer-links a:hover {
+    background: rgba(163, 230, 53, 0.22);
+    border-color: #A3E635;
+    color: #D9F99D;
+    box-shadow: 0 4px 15px rgba(163, 230, 53, 0.25);
+    transform: translateY(-2px);
+}
+
+.brand-ml-tag {
+    font-family: var(--font-primary);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: var(--accent-mint);
+    color: var(--primary);
+    padding: 0.2rem 0.55rem;
+    border-radius: 6px;
+    border: 1px solid var(--accent-mint-border);
+    margin-left: 0.45rem;
+    vertical-align: middle;
+    display: inline-block;
+}
 
 /* Contact Modal */
 .modal {

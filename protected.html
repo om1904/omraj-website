@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protected Drive Vault - Om Raj</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css?v=footer_green_logos_protected_v18">
+    <link rel="stylesheet" href="protected_gate.css?v=footer_green_logos_protected_v18">
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle at 50% 25%, rgba(253, 228, 195, 0.45) 0%, rgba(253, 251, 247, 0) 70%), var(--bg-body, #FDFBF7);
+            padding: 2rem 1rem;
+            color: var(--text-main, #0B2545);
+        }
+        .page-vault-card {
+            background: linear-gradient(155deg, #0e2f1e 0%, #091e13 100%);
+            border: 2px solid rgba(163, 230, 53, 0.45);
+            border-radius: 28px;
+            width: 100%;
+            max-width: 500px;
+            padding: 3rem 2.5rem;
+            box-shadow: 0 30px 70px rgba(12, 43, 25, 0.35), 0 0 35px rgba(163, 230, 53, 0.2);
+            color: #FFFFFF;
+            position: relative;
+        }
+        .back-nav-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1.8rem;
+            color: #D9F99D;
+            font-size: 0.92rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        .back-nav-link:hover {
+            color: #BEF264;
+            transform: translateX(-3px);
+        }
+    </style>
+</head>
+<body>
+    <div class="page-vault-card" id="protectedModalCard">
+        <div class="protected-header">
+            <div class="protected-vault-icon" id="protectedVaultIcon">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <h1 class="protected-title">Protected Drive Vault</h1>
+            <p class="protected-subtitle">Restricted Repository for Om Raj. Complete two-factor authentication to access the Google Drive repository.</p>
+        </div>
+
+        <!-- Steps Progress -->
+        <div class="protected-steps">
+            <span class="protected-step-pill active" id="pillStep1"><i class="fa-solid fa-key"></i> 1. Password</span>
+            <span class="protected-step-divider"></span>
+            <span class="protected-step-pill" id="pillStep2"><i class="fa-solid fa-hashtag"></i> 2. PIN</span>
+        </div>
+
+        <!-- Step 1: Master Password Form -->
+        <form id="protectedStep1Form" class="protected-step-view active" autocomplete="off">
+            <div class="protected-field-group">
+                <label class="protected-label" for="protectedPasswordInput">Step 1: Enter Master Password</label>
+                <div class="protected-input-wrapper">
+                    <i class="fa-solid fa-lock protected-input-icon"></i>
+                    <input type="password" id="protectedPasswordInput" class="protected-input" placeholder="Enter Master Password" required autofocus autocomplete="new-password">
+                </div>
+                <div class="protected-error-text" id="protectedPassError">
+                    <i class="fa-solid fa-circle-exclamation"></i> Incorrect Master Password. Please try again.
+                </div>
+            </div>
+            <button type="submit" class="protected-btn" id="protectedStep1Btn">
+                <span>Verify Password</span> <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </form>
+
+        <!-- Step 2: PIN Form -->
+        <form id="protectedStep2Form" class="protected-step-view" autocomplete="off">
+            <div class="protected-field-group">
+                <label class="protected-label" for="protectedPinInput">Step 2: Enter Security PIN</label>
+                <div class="protected-input-wrapper">
+                    <i class="fa-solid fa-hashtag protected-input-icon"></i>
+                    <input type="password" id="protectedPinInput" class="protected-input" placeholder="••••" maxlength="8" required autocomplete="off">
+                </div>
+                <div class="protected-error-text" id="protectedPinError">
+                    <i class="fa-solid fa-circle-exclamation"></i> Invalid Security PIN. Access denied.
+                </div>
+            </div>
+            <button type="submit" class="protected-btn" id="protectedStep2Btn">
+                <span>Unlock & Open Drive</span> <i class="fa-solid fa-unlock"></i>
+            </button>
+        </form>
+
+        <!-- Success State -->
+        <div class="protected-success-view" id="protectedSuccessView">
+            <div class="protected-success-icon">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3 style="font-size: 1.4rem; color: #BEF264; margin-bottom: 0.5rem;">Access Granted!</h3>
+            <p style="color: #E2E8F0; font-size: 0.95rem; margin-bottom: 1.2rem;">Opening your protected Google Drive folder...</p>
+            <a href="https://drive.google.com/drive/folders/1Oy5R4jPU0cURaML56XtarmWEQ1s9eMtB?usp=sharing" target="_blank" class="protected-redirect-link" id="protectedDirectLink">
+                <i class="fa-brands fa-google-drive"></i> Open Google Drive Directly
+            </a>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="index.html" class="back-nav-link"><i class="fa-solid fa-arrow-left"></i> Return to Portfolio</a>
+        </div>
+    </div>
+
+    <script src="protected_gate.js?v=footer_green_logos_protected_v18"></script>
+</body>
+</html>
