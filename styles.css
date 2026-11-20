@@ -1530,3 +1530,83 @@ a:hover {
 }
 
 
+
+
+/* Institutional Affiliations & Partner Logos Showcase */
+.affiliations-banner {
+    padding: 3.5rem 0;
+    background: linear-gradient(180deg, rgba(253, 251, 247, 0.95) 0%, rgba(244, 240, 230, 0.98) 100%);
+    border-top: var(--glass-border);
+    border-bottom: var(--glass-border);
+    position: relative;
+    width: 100%;
+}
+.affiliations-title {
+    text-align: center;
+    margin-bottom: 2.2rem;
+}
+.affiliations-title h3 {
+    font-size: 1.25rem;
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    word-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--header-color, #0B2545);
+    margin: 0 0 0.4rem;
+}
+.affiliations-title p {
+    font-size: 0.92rem;
+    color: var(--text-muted);
+    margin: 0;
+}
+.affiliations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    align-items: stretch;
+}
+.affiliation-logo-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 1.25rem 1rem;
+    background: #FFFFFF;
+    border: 1.5px solid rgba(0, 0, 0, 0.06);
+    border-radius: 18px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: center;
+    text-decoration: none;
+}
+.affiliation-logo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(31, 110, 67, 0.16);
+    border-color: #1F6E43;
+}
+.affiliation-logo-card img {
+    height: 46px;
+    width: auto;
+    max-width: 100px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+.affiliation-logo-card:hover img {
+    transform: scale(1.1);
+}
+.affiliation-logo-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-main, #0B2545);
+    letter-spacing: 0.02em;
+    margin-top: 0.2rem;
+}
+.affiliation-logo-sub {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+}
